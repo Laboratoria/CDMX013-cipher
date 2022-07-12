@@ -1,3 +1,47 @@
+README proyecto 1 Cipher: Secret Lines
+
+# Incluye info sobre proceso y decisiones de diseño.
+
+Para comnezar el proceso y tomar las decisiones del diseño, comencé con una
+tormenta de ideas usando lapiz y papel. En esta tormenta de ideas primero me 
+imagine como seria la pagina mas simple con todos los requisitos especificados 
+en el README del proyecto. Aqui dibuje una sola pantalla de computadora con 
+un campo para mensaje (input), una campo para offset, un boton de enter y
+un campo de lectura (output).
+
+Una vez que defini a que tipo de usuario estaría orientado, pensé en un nombre
+para la pagina, cree un logo, y esocgí una paleta de colores teniendo en mente
+rojo (o algun matiz de rojo) para codificación, vere (o algun matiz de verde 
+para la descodificación), fondo claro y pie de pagina. Use la pagina
+coolors (proporcionada por una compañera de squat) para esto.
+
+Escribi que caracteristicas queria que tuviera mi pagina y luego me fui a 
+figma a hacer un prototipo, incluyendo los botones y que quería que hicieran.
+
+Me gustaría agregar un ojito para el offset y para el mensaje a codificar/codificado
+en caso que el usuario quisiera mantener la privacidad en el momento y copiar y 
+pegar el mensaje para poder ser leido luego en su procesador de texto de preferencia.
+
+# Explica claramente quiénes son los usuarios y su relación con el producto.
+
+Luego me pregunte que estaría haciendo la persona que hiciera esta pagina necesaria,
+en otras palabras, que problema estaría solucionando? después de hacer una lista de
+diferentes perfiles de personas, me imagine a un periodista enviando la nota de 
+prensa a su editor o equipo de trabajo. Querria que esta estuviese codificada como 
+medida de protección de la información.
+
+# Explica claramente cómo el producto soluciona los problemas/necesidades de
+# los usuarios.
+
+Si quiera pasar una información sensible y ganar tiempo para su publicación o
+simplemente pasar el pitazo de una primicia que sea en corto tiempo, podría usar
+este sistema de codificación. Aunque este sistema de codificación por sustitución
+es muy facil de descodificar, no se descodifica tan rápido, por lo que podría ganar
+tiempo para realizar la acción deseada.
+
+
+
+
 # Cifrado César
 
 ## Índice
