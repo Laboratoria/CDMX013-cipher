@@ -8,3 +8,47 @@ html {
 header {
     text-align: center;
 }
+#welcome {
+font-family: Arial, Helvetica, sans-serif;
+text-align: justify;
+font-size: 12px;
+}
+#cipher {
+    background-color: #C6757D; /* rose */
+  border: none;
+  color: white;
+  width: 50%;
+  padding: 32px 16px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition-duration: 0.4ms;
+}
+#cipher:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.532), 0 17px 50px 0 rgba(0, 0, 0, 0.301);
+}
+#decipher {
+    background-color: #739E82; /* Russian Green */
+    border: none;
+    color: white;
+    width: 50%;
+    padding: 32px 16px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+#decipher:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.532), 0 17px 50px 0 rgba(0,0,0,0.301);
+}
+footer {
+
+}
+#menu {
+
+}
