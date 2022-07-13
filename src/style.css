@@ -1,0 +1,49 @@
+body {
+background-color:#F5F5F5 ;
+}
+#rootTitle {
+    background-color:#9B0808;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: normal ;
+    font-family: "Arial" sans serif;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+#rootFirstView{
+    background-color:#F9EAEA;
+    color:#000000;
+    font-size: 15px;
+    font-weight: normal ;
+    font-family: "Arial" sans serif;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+#buttonOne{
+    background-color:#F9EAEA;
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal ;
+    font-family: "Arial" sans serif;
+    /*display: block;  ¿Necesito agregarlo para modificar el color del borde de mi botón?*/
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+#rootSecondView{
+    background-color:#F9EAEA;
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal ;
+    font-family: "Arial" sans serif;
+    display: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
