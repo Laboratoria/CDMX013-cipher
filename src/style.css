@@ -1,0 +1,10 @@
+html {
+  height: 95vh;
+  width: 97vw;
+  background: #EFE9E7;
+  padding: 400;
+  margin: 400;
+}
+header {
+    text-align: center;
+}
