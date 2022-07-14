@@ -1,17 +1,30 @@
 body{
     background-image: url('https://previews.123rf.com/images/deepfuze/deepfuze1607/deepfuze160700041/60148747-servicio-postal-modelo-incons%C3%BAtil-del-vector-con-los-sobres-y-cartas-sobre-un-fondo-beige.jpg?fj=1');
 
-menu{
-    display: flexbox;
+  
 }
 
-p{
-    font-size: x-large;
-    font-family: Arial, Helvetica, sans-serif;
+header{
+    
+    background-color: rgba(119, 136, 153, 0.651);  
 }
 
 h1{
     text-align: center;
-    font-weight: bold;
-    font-size:larger
+    padding: 2%;
+}
+h2{
+    text-align: center;
+    font-size: xx-large;
+    
+}
+p{
+    text-align: center;
+    text-shadow: 2px 2px brown;
+    font-size: xx-large;
+    
+}
+
+menu{
+    display: flexbox;
 }
