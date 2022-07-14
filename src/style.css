@@ -1,0 +1,20 @@
+h1{
+    color: blueviolet;
+background-color: beige;
+text-align: center;
+font-family: cursive; font-size: large;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+.contenedor{
+    box-sizing: center;
+    text-align: center;
+    font: 120% sans-serif;
+    height: 49%;
+    background-color: rgb(116, 178, 240);
+    margin: 1% 1%;
+    border: 12px solid;
+    }
