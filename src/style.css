@@ -1,7 +1,5 @@
 body{
-    background-image: url('https://previews.123rf.com/images/deepfuze/deepfuze1607/deepfuze160700041/60148747-servicio-postal-modelo-incons%C3%BAtil-del-vector-con-los-sobres-y-cartas-sobre-un-fondo-beige.jpg?fj=1');
-
-  
+    background-image: url('https://previews.123rf.com/images/deepfuze/deepfuze1607/deepfuze160700041/60148747-servicio-postal-modelo-incons%C3%BAtil-del-vector-con-los-sobres-y-cartas-sobre-un-fondo-beige.jpg?fj=1');  
 }
 
 header{
@@ -41,6 +39,7 @@ menu{
 
 button{
     font-size: xx-large;
+    font-weight: bold;
     margin: 0 30px 0 30px;
     border-radius: 10px;
     color:beige;
@@ -55,4 +54,9 @@ footer{
     text-align: center;
     text-shadow: 2px 2px brown;
     background-color: rgba(0, 0, 0, 0.658);
+}
+
+#cipherhtml{
+    background-color: rgba(128, 128, 128, 0.685);
+    border: 1px salmon;
 }
