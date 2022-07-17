@@ -12,18 +12,26 @@
     <div id="root"> 
     </div>
 
-       <header>
+      <header>
         <h1 id="introduction2">📜🔑🔐Cifrando un texto</h1>
       </header>
-    
-     <main id="cipherhtml">
-       
-    
-     </main> 
+            <!-- ingreso de datos -->
+            <form id="cipherhtmlmain">
+            
+                  <label>Pon aquí tu mensaje a <strong>cifrar</strong> </label> <br>
+                  <textarea name="MessageToCipher" rows="10" cols="100" placeholder="Escribe aquí tu texto a cifrar"></textarea> <br>
+                  <br>
+                  <label>Número secreto (llave) para cifrar: </label> 
+                  <input type="number" id="offsetID" name="offset" maxlength="2" min="1" max="27">
+                  <button type="submit" value="Submit" id="cipherFunction" onclick="cipherTEXT(click)">Cifrar</button> <br><br>
+             
+        
+              <p id="cipherText"></p>
+            </form>
      
      <menu>         
         <button><a href="index.html">Inicio</a></button>
-      </menu>
+     </menu>
 
       <footer>
         <p>Elaborado por Arely Gutiérrez, estudiante de Laboratoria</p>

@@ -5,6 +5,7 @@ body{
 header{
     
     background-color: rgba(119, 136, 153, 0.651);  
+    border: dotted;
 }
 
 h1{
@@ -60,3 +61,27 @@ footer{
     background-color: rgba(128, 128, 128, 0.685);
     border: 1px salmon;
 }
+
+form{
+    padding-top: 40px;
+    background-color: #e2dadac4;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px brown;
+    margin: 2% 2% 0% 2%; 
+}
+
+#offsetID{
+    font-size: 35px; //tamaño offset numero
+}
+
+textarea{
+    font-size: 30px; //tamaño caja escribe aquí tu texto a cifrar
+/*    background-color: black;  
+    text-align: center; */
+}
+
+
+
+    
+
