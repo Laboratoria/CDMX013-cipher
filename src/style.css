@@ -1,5 +1,14 @@
 body {
 background-color:#F5F5F5 ;
+padding: 2em
+}
+/*Tittle*/
+#logo {
+    width: 10%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
 }
 #rootTitle {
     background-color:#9B0808;
@@ -7,11 +16,13 @@ background-color:#F5F5F5 ;
     font-size: 20px;
     font-weight: normal ;
     font-family: "Arial" sans serif;
-    width: 80%;
-    margin-left: auto;
+    display: inline-block;
+    width: 60%;
+    margin-left: 1em;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
+/*Primera interfaz*/
 #rootFirstView{
     background-color:#F9EAEA;
     color:#000000;
@@ -21,29 +32,126 @@ background-color:#F5F5F5 ;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
+
 #buttonOne{
     background-color:#F9EAEA;
     color: #000000;
+    border-color: #9B0808;
     font-size: 20px;
     font-weight: normal ;
     font-family: "Arial" sans serif;
-    /*display: block;  ¿Necesito agregarlo para modificar el color del borde de mi botón?*/
     width: 20%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
+
+/*Segunda interfaz del usuario*/
 #rootSecondView{
-    background-color:#F9EAEA;
+    background: none;
+    color: #000000;
+    display: none;
+
+}
+
+  /*Vista de las cajas de texto*/
+.elementBox{
+    display: flex;
+    justify-content:center;
+    gap:10px ;
+}
+
+.boxMessage {
+    width: 350px;
+    height: 300px;
+    background: #F9EAEA;
+    border: 1px solid #000000;
+}
+
+  /*Diseño de la caja para ingresar #*/
+.inputNumber{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#numberSelect{
+  border: 1px solid blue;
+  background-color: aliceblue;
+}
+
+/*Diseño de los botones accionables para */
+.decipherMessage {
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+}
+
+/*Diseño de los botones particularmente*/
+#buttonSelectNumber{
+    padding: 15px 25px;
+    width: 154px;
+    height: 33px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align:center;	
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+    background-color: #ed9898;
+    border: #9B0808;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+}
+
+#cipherButton {
+    padding: 15px 25px;
+    width: 308px;
+    height: 66px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #9d0000;
+    border: #9B0808;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+}
+
+#decipherButton {
+    padding: 15px 25px;
+    width: 308px;
+    height: 66px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #9d0000;
+    border: #9B0808;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+} 
+
+/*#decipherMessage{
+    background-color: none;
     color: #000000;
     font-size: 20px;
     font-weight: normal ;
     font-family: "Arial" sans serif;
     display: none;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 50px;
 }
+/*
+#footNotes{
+    display:flex;
+    justify-content: flex-end;
+}
+*/

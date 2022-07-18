@@ -8,27 +8,49 @@
   <body>
     <center> 
 
-    <div id="rootTitle">
-    <h1> Des-cifrando el código del amor </h1> <br>
-    </div>
+      <figure id="logo">
+        <svg width="160" height="134" viewBox="0 0 160 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M146.667 78.1667H140C140 56.5592 119.133 39.0833 93.3333 39.0833H86.6667V31.9925C88.6941 31.0122 90.3776 29.6021 91.5479 27.904C92.7181 26.2059 93.3339 24.2797 93.3333 22.319C93.3327 20.3584 92.7157 18.4324 91.5444 16.7348C90.3731 15.0372 88.6888 13.6279 86.6607 12.6484C84.6327 11.669 82.3325 11.154 79.9914 11.1552C77.6504 11.1565 75.351 11.6739 73.3245 12.6556C71.2979 13.6372 69.6157 15.0484 68.447 16.7472C67.2783 18.4461 66.6643 20.3727 66.6667 22.3333C66.6667 26.465 69.3333 30.0942 73.3333 31.9925V39.0833H66.6667C40.8667 39.0833 20 56.5592 20 78.1667H13.3333C9.66667 78.1667 6.66667 80.6792 6.66667 83.75V100.5C6.66667 103.571 9.66667 106.083 13.3333 106.083H20V111.667C20 114.628 21.4048 117.469 23.9052 119.563C26.4057 121.657 29.7971 122.833 33.3333 122.833H126.667C134.067 122.833 140 117.864 140 111.667V106.083H146.667C150.333 106.083 153.333 103.571 153.333 100.5V83.75C153.333 80.6792 150.333 78.1667 146.667 78.1667ZM64.6667 86.2625L59.8 90.3383L50 98.5458L35.3333 86.2625C32.6667 84.0292 32.6667 80.3442 35.3333 78.1667C38.0667 75.8217 42.4 75.8217 45.1333 78.1667L50 82.1867L54.8667 78.1667C57.6 75.8217 61.9333 75.8217 64.6667 78.1667C67.3333 80.3442 67.3333 84.0292 64.6667 86.2625ZM124.667 86.2625L119.8 90.3383L110 98.5458L95.3333 86.2625C92.6667 84.0292 92.6667 80.3442 95.3333 78.1667C98.0667 75.8217 102.4 75.8217 105.133 78.1667L110 82.1867L114.867 78.1667C117.6 75.8217 121.933 75.8217 124.667 78.1667C127.333 80.3442 127.333 84.0292 124.667 86.2625Z" fill="#B5073A"/>
+          </svg>
+      </figure>  
+    <header id="rootTitle">
+        <h1> Des-cifrando el código del amor </h1> <br>
+    </header>
 
-    <div id="rootFirstView"> <!--First view of the page.-->
+  <main>
+
+    <article id="rootFirstView"> <!--First view of the page.-->
      
-      <p> ¿Cansadx de que lean tus mensajes privados?</p> <br>
-      <p> Sabemos que la privacidad en este mundo lleno de redes sociales dónde al instante puedes verte vulneradx es un tema que nos ocupa y nos preocupa... </p><br>
-      <p> Dale un giro a tus mensajes...</p><br>
-    </div>
+      <h2> ¿Cansadx de que lean tus mensajes privados?</h2> <br>
+      <p2> Sabemos que la privacidad en este mundo lleno de redes sociales donde al instante puedes verte vulneradx es un tema importante para muchas personas que buscan compartir aspectos personales con otras afines sin prescindir de sus aplicaciones favoritas como whatsApp, Facebook, Instagram, etc. </p2><br>
+      <p3> Por esta razón te queremos presentar esta alternativa para codificar y decodificar tus mensajes basada en el algoritmo de <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Cifrado César</a> utilizado hace siglos con fines de tácticas de guerra, ahora enfocado a resolver tus problemas amoroso. 
+      </p3><br>
+      <p4>¡No perdamos tiempo!</p4><br>
 
-      <input type="button" value="¡A cifrar!" id="buttonOne" onclick="showCipherBox()">
+      <button id="buttonOne" >¡A cifrar!</button>
+<!--      <input type="button" value="¡A cifrar!" id="buttonOne" onclick="showCipherBox()"> -->
+      </article>
     
-    <div id="rootSecondView"> <!--Second view of the page.-->
+    <article id="rootSecondView"> <!--Second view of the page.-->
+      <div class="elementBox">
+      <input type="text" placeholder="Ingresa tu texto" id="cipherBox" class="boxMessage" name="firstBox" /><br>
+      <input type="text" placeholder="Ingresa tu mensaje" id="decipherBox" class="boxMessage" name="secondBox" /><br>
+      </div><br>
+      
+      <div class="inputNumber">
+      <input type="text" name="numberSelected" id="numberSelect" /> <br>
+      <button name="numberSelected" id="buttonSelectNumber">Ingresar</button>
+      </div><br>
 
-      <p>Esto solo es para saber que funciona mi javascript "showCipherBox"</p>
+      <div class=" decipherMessage">
+      <button name="firstBox" id="cipherButton">Codificar</button><br>
+      <button name="secondBox" id="decipherButton">Decodificar</button><br>
+      </div> 
+    </article>
+  </main>
 
+<!--  <footer id="foorNotes">Holi</footer>  -->
 
-
-
-    </div>
   </center>
     <script src="index.js" type="module"></script>
   </body>
