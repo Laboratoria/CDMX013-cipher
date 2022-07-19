@@ -1,11 +1,12 @@
 body{
     background-image: url('https://previews.123rf.com/images/deepfuze/deepfuze1607/deepfuze160700041/60148747-servicio-postal-modelo-incons%C3%BAtil-del-vector-con-los-sobres-y-cartas-sobre-un-fondo-beige.jpg?fj=1');  
+    /*align-items: center;  /** quita mi formato que le habia dado pero segun debia hacer: Alinea elementos flexibles a lo largo del eje transversal de la línea actual del contenedor flexible. */
 }
-
+/*cabecera principal*/
 header{
     
     background-color: rgba(119, 136, 153, 0.651);  
-    border: dotted;
+    border: dotted;  
 }
 
 h1{
@@ -13,6 +14,7 @@ h1{
     padding: 2%;
     font-size: 70px;
 }
+
 h2{
     text-align: center;
     font-size: 50px;
@@ -20,22 +22,21 @@ h2{
     margin: 10%;
     text-shadow: 2px 2px rgb(250, 248, 248);
     background-color: rgba(119, 136, 153, 0.753);
+}
 
 }
 #introduction{
-    font-size: 40px;
-    font-family: cursive;
     text-align: center;
-    text-shadow: 2px 2px brown;
-    background-color: rgba(240, 248, 255, 0.801);
-    
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 10%;
+    text-shadow: 2px 2px brown);
     
 }
 
 menu{
     display: flexbox;
-    text-align: center;
-   
+    text-align: center; 
 }
 
 button{
@@ -47,8 +48,10 @@ button{
     background-color: #D09B11;
 }
 
+
+}
+/*pie de página*/
 footer{
-    
     color:white;
     font-size: 40px;
     font-family: cursive;
@@ -56,32 +59,8 @@ footer{
     text-shadow: 2px 2px brown;
     background-color: rgba(0, 0, 0, 0.658);
 }
-
+/*es id de main en cipher html con la intencion de poner background degradado */
 #cipherhtml{
     background-color: rgba(128, 128, 128, 0.685);
     border: 1px salmon;
 }
-
-form{
-    padding-top: 40px;
-    background-color: #e2dadac4;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 2px 2px brown;
-    margin: 2% 2% 0% 2%; 
-}
-
-#offsetID{
-    font-size: 35px; //tamaño offset numero
-}
-
-textarea{
-    font-size: 30px; //tamaño caja escribe aquí tu texto a cifrar
-/*    background-color: black;  
-    text-align: center; */
-}
-
-
-
-    
-
