@@ -2,24 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Secret Messenger</title>
+    <title>Secret Translator</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="module"></script>
   </head>
   <body>
+    <div id="root">
+
     <main>
-      <h1>SECRET MESSENGER</h1>
+      <h1>SECRET TRANSLATOR</h1>
       <p><em>No más momentos incómodos porque alguien lea tus mensajes por equivocación.<br>
       Utiliza esta herramienta para codificar y decodificar tus mensajes, después cópialos y envíalos a quien más confianza le tengas.</em></p>
-    <marquee>Secret. Secreto. 秘密. Segreto. Geheimnis. μυστικό. μυστικό.</marquee>
-    <form id="cifrador">
-      <input id="input-otriginal" placeholder="Su texto aquí" type="text" name="text">
-      <button id="codificar" type="button">Haz click aquí</button>
+        
+          <p>Ingresa la clave<br>
+          <input type="number" id="offset" class="txtbx">
+         </p>
+         <div class="container">
+        <div class="izq">
+          <textarea name="txt" placeholder="Tu texto aquí..." type="text" name="text"cols="30" rows="10"></textarea><br>
+        </div>
+        <div id="botones" class="btn">
+          <button id="btncodif" type="button">Cifrar</button><br>
+          <button id="btndecodif" type="button">Descifrar</button><br>
+          </div>
+        <div class="der">
+          <textarea name="rslt" placeholder="Tu resultado aquí..." type="text" name="text"cols="30" rows="10"></textarea><br>
+        </div>
+        </div>
+
+    <!--<form id="cifrador">
     
-    </form>
+    </form>-->
+    
     </main>
-    <script src="index.js" type="module"></script>
-    
-    
+    </div>
   </body>
 </html>
 
