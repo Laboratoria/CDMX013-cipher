@@ -2,9 +2,9 @@ import cipher from './cipher.js';
 
 console.log(cipher);
 
-//cipherTEXT(   ){
-  //  event.preventDefault() // Previene recarga del navegador
-    //console.log("esto va bien");
+//cipherTEXT(){
+ //   event.preventDefault() // Previene recarga del navegador
+ //   console.log("esto va bien")
 //}
 
 
@@ -14,4 +14,7 @@ let GetCipherText=document.getElementById("cipherFunction");
 GetCipherText.addEventListener("click", function (event){
     event.preventDefault() // Previene recarga del navegador
     alert("esto va bien");
+    console.log(document.getElementById("message").value);
+    console.log(document.getElementById("offsetID").value);
+    
 });
