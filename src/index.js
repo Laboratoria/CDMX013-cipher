@@ -13,8 +13,9 @@ let GetCipherText=document.getElementById("cipherFunction");
 
 GetCipherText.addEventListener("click", function (event){
     event.preventDefault() // Previene recarga del navegador
-    alert("esto va bien");
+    //alert("esto va bien");
     console.log(document.getElementById("message").value);
     console.log(document.getElementById("offsetID").value);
-    
+    let string1 = document.getElementById("message").value;
+    let offset1 = Number(document.getElementById("offsetID").value);
 });
