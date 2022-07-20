@@ -1,54 +1,47 @@
-
-import {pressButton, displayView} from './newView.js'; 
+//Despliega la segunda vista de la interfaz y oculta la primera
+import { pressButton, displayView } from './newView.js';
 pressButton.addEventListener("click", displayView);
 
 
 import cipher from './cipher.js';
-//console.log(cipher);
 
-//¿Esta parte debería ir en la cipher
+//Llamado de variables desde el DOM
+const inputButton = document.getElementById("cipherButton");
+const outputButton = document.getElementById("decipherButton");
 
-function cipherText(){
-    const textCode= document.getElementById("cipherBox").value;
-    let answerCode= textCode.toUpperCase();
-    const printAnswer= document.getElementById("decipherBox");
 
-    
-            if (textCode!== null)
-            printAnswer.value= answerCode;
+//Esta función trae la info que el UX ingresa a la interfaz y determina que hacer en caso de no obtener lo esperado en encode
+function encode() {
+    let offset = document.getElementById("numberSelect").value;
+    let inputText = document.getElementById("cipherBox").value;
+    let printAnswer = document.getElementById("decipherBox");
+/*Manipulación de la cadena que se ingrese a Mayúsculas 
+¿Será que lo dejo como array o cómo una llamada a la otra variable? ¿En qué cambia? No me admite como valor un array */
+    let string = inputText.toUpperCase();
+    if (offset === null || offset <= 0) {
+        alert("Por favor ingresa un número")
+    } else if (inputText === " ") {
+        alert("Por favor ingresa el mensaje")
+    } else {
+        printAnswer.value = cipher.encode(offset, string);
     }
-
-function decipherText(){
-    const textDecode= document.getElementById("decipherBox").value;
-    const answerDecode= textDecode.toUpperCase();
-    const printAnswer2= document.getElementById("cipherBox");
-
-    
-            if (textDecode!== null)
-            printAnswer2.value= answerDecode;
-    }
-
-
-
-// estas son las varianles que te llevan a realizar las interacciones
-var pressButton1= document.getElementById("cipherButton");
-var pressButton2= document.getElementById("decipherButton");
-
-  //Estos botones son las interacciones que se van a observar en la segunda pantalla
-
-    pressButton1.addEventListener("click", cipherText);
-    pressButton2.addEventListener("click", decipherText);
-
-
- 
-
-
-
-
-/*
-function numberCipher() {
-   let numberChoosen
-    let letterChoosen
-    (numberChoosen)
 }
-*/
+
+function decode(){
+    let offset = document.getElementById("numberSelect").value;
+    let inputText = document.getElementById("decipherBox").value;
+    let printAnswer = document.getElementById("cipherBox");
+    let string = inputText.toUpperCase();
+
+    if (offset === null || offset <= 0 ) {
+        alert("Por favor ingresa un número")
+    } else if (string === "") {
+      alert ("Por favor ingresa el mensaje a decodificar")  
+    } else {
+        printAnswer.value= cipher.decode(offset,string);
+    }
+}
+
+//Llamando a las funciones principales mediante el DOM
+inputButton.addEventListener("click", encode);
+outputButton.addEventListener("click", decode);
