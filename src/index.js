@@ -20,7 +20,7 @@ function encode() {
     let string = inputText.toUpperCase();
     if (offset === null || offset <= 0) {
         alert("Por favor ingresa un número")
-    } else if (inputText === " ") {
+    } else if (string === " ") {
         alert("Por favor ingresa el mensaje")
     } else {
         printAnswer.value = cipher.encode(offset, string);

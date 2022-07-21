@@ -26,7 +26,7 @@ const cipher = {
       let newCode1 = string.charCodeAt(i);
       console.log(newCode1);
       //Fómula diseñada del decifrado César ((x +65 - #posición)% 26 +65)
-      let inputTextForm = (newCode1 + 65- offset) % 26 + 65;
+      let inputTextForm = (newCode1 + 65 - offset) % 26 + 65;
       let inputRewrite = String.fromCharCode(inputTextForm);
       yourTextDecode2 += inputRewrite;
     }
