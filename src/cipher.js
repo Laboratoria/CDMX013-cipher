@@ -21,7 +21,7 @@ const cipher = {
   //segunda key del objeto que corresponde al value de decifrado
   decode: function (offset, string) {
   
-    let yourTextDecode2 = " ";
+    let yourTextDecode2 = "";
     for (let i = 0; i < string.length; i++) {
       let newCode1 = string.charCodeAt(i);
       console.log(newCode1);
