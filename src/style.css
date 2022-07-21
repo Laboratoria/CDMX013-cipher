@@ -1,8 +1,8 @@
 body{
     background-image: url('https://previews.123rf.com/images/deepfuze/deepfuze1607/deepfuze160700041/60148747-servicio-postal-modelo-incons%C3%BAtil-del-vector-con-los-sobres-y-cartas-sobre-un-fondo-beige.jpg?fj=1');  
     align-items: center;  /** quita mi formato que le habia dado pero segun debia hacer: Alinea elementos flexibles a lo largo del eje transversal de la línea actual del contenedor flexible. */
-   // Width: 1440px;
-   // Height: 1024px;
+   /* Width: 1440px;
+   // Height: 1024px;*/
 }
 /*cabecera principal*/
 header{
