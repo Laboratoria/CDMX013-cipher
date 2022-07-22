@@ -12,21 +12,19 @@ const outputButton = document.getElementById("decipherButton");
 
 //Esta función trae la info que el UX ingresa a la interfaz y determina que hacer en caso de no obtener lo esperado en encode
 function encode() {
-    let offset = parseInt(document.getElementById("numberSelect").value);
+    let offset = (document.getElementById("numberSelect").value);
     let inputText = document.getElementById("cipherBox").value;
     let printAnswer = document.getElementById("decipherBox");
-    /*Manipulación de la cadena que se ingrese a Mayúsculas 
-    ¿Será que lo dejo como array o cómo una llamada a la otra variable? ¿En qué cambia? No me admite como valor un array */
     let string = inputText.toUpperCase();
     
      /*if (offset !== Number || offset < 0) {
         alert("Por favor ingresa un número")
-    } else */ if (string == "" ) {
+    } else  if (string == "" ) {
         alert("Por favor ingresa el mensaje")
-    } else {
+    } else {*/
         printAnswer.value = cipher.encode(offset, string);
     }
-}
+
 
 function decode() {
     let offset = parseInt(document.getElementById("numberSelect").value);
