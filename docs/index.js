@@ -18,9 +18,10 @@ function encode() {
     /*Manipulación de la cadena que se ingrese a Mayúsculas 
     ¿Será que lo dejo como array o cómo una llamada a la otra variable? ¿En qué cambia? No me admite como valor un array */
     let string = inputText.toUpperCase();
-    if (offset === null || offset <= 0) {
+    
+     /*if (offset !== Number || offset <= 0) {
         alert("Por favor ingresa un número")
-    } else if (string === " ") {
+    } else */ if (string == "" ) {
         alert("Por favor ingresa el mensaje")
     } else {
         printAnswer.value = cipher.encode(offset, string);
@@ -32,10 +33,10 @@ function decode() {
     let inputText = document.getElementById("decipherBox").value;
     let printAnswer = document.getElementById("cipherBox");
     let string = inputText.toUpperCase();
-
-    if (offset === null || offset <= 0) {
+    
+    /*if (offset !== Number || offset <= 0) {
         alert("Por favor ingresa un número")
-    } else if (string === "") {
+    } else */if (string == "" ) {
         alert("Por favor ingresa el mensaje a decodificar")
     } else {
         printAnswer.value = cipher.decode(offset, string);
