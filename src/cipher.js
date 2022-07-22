@@ -1,16 +1,23 @@
 
 
 const cipher = {
-
+  
      encode: function (offset, string) {
+        console.log(offset)
+        console.log(string)
+      let m = '';
+        let SToN="";
+        let j="";
         
-        let m = '';
         for(let i=0; i<=string.length; i++){
-          
-            let SToN ='string'.charCodeAt[i];//string to number
-            let j = (SToN[i]-65+offset)%26 + 65; //Convierte a numero y hago operaciones para cifrado
-            m = j.fromCharCode[i]; //devuelve a ASCII
-            //console.log(document.getElementById("m").value);
+            //console.log(string.charCodeAt(i));
+            SToN =string.charCodeAt(i);//string to number
+            console.log(SToN);
+             j = (SToN[i]-65 + offset) % 26 + 65; //Convierte a numero y hago operaciones para cifrado
+             console.log(j);
+             m = String.fromCharCode(j); //devuelve a ASCII
+             console.log(m)
+            //console.log(document.getElementById("m").value);*/
         }
         //document.getElementById("m").innerHTML = "Tu mensaje cifrado es: " + m;  
         return m;
