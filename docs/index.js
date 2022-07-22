@@ -19,7 +19,7 @@ function encode() {
     ¿Será que lo dejo como array o cómo una llamada a la otra variable? ¿En qué cambia? No me admite como valor un array */
     let string = inputText.toUpperCase();
     
-     /*if (offset !== Number || offset <= 0) {
+     /*if (offset !== Number || offset < 0) {
         alert("Por favor ingresa un número")
     } else */ if (string == "" ) {
         alert("Por favor ingresa el mensaje")
@@ -34,7 +34,7 @@ function decode() {
     let printAnswer = document.getElementById("cipherBox");
     let string = inputText.toUpperCase();
     
-    /*if (offset !== Number || offset <= 0) {
+    /*if (offset !== Number || offset < 0) {
         alert("Por favor ingresa un número")
     } else */if (string == "" ) {
         alert("Por favor ingresa el mensaje a decodificar")

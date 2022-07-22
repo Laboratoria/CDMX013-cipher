@@ -3,7 +3,7 @@ const cipher = {
   encode: (offset, string) => {
 
     //Creamos una variable fuera del loop para que podamos llamarla mediante un return al final con todo lo ocurrido en el ciclo determinado
-    let yourTextDecode = "";
+    let yourTextDecode = [];
     //Usamos un loop (for) para iterar dentro del string definiendo que comience por el indice 0, continue hasta que sea menor que el tamaño del string y avance de uno en unoo a manera que recorra todo el string establecido.
     for (let i = 0; i < string.length; i++) {
       let newCode = string.charCodeAt(i);
@@ -21,7 +21,7 @@ const cipher = {
   //segunda key del objeto que corresponde al value de decifrado
   decode: function (offset, string) {
   
-    let yourTextDecode2 = "";
+    let yourTextDecode2 = [];
     for (let i = 0; i < string.length; i++) {
       let newCode1 = string.charCodeAt(i);
   //Fómula diseñada del decifrado César ((x +65 - #posición)% 26 +65)

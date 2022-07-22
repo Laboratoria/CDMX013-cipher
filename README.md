@@ -47,7 +47,9 @@ aplicación en el sistema ROT13.
 ## 2. Des-cifrando el algoritmo del amor
 
 En este apartado se encontrará con la información del desarrollo de este proyecto, por ejemplo: planeación del producto, búsqueda de información, pruebas del producto, etc...
+
 Antes de continuar es indispensable mencionar que se analizó a profundidad el Readme del proyecto original para determinar por dónde comenzar a abordarlo, por tal motivo, puede haber similitudes entre lo descrito en ese y el que usted está leyendo.
+
 
 #### Definir el producto
 
@@ -73,7 +75,7 @@ Esta interfaz permite al usuarix:
 * Ver el resultado del mensaje cifrado.
 * Insertar un mensaje (texto) a descifrar.
 * Ver el resultado del mensaje descifrado.
-
+  
 ## 3. Desarrollo en Figma
 
 La imagen del proyecto está pensada en una paleta de colores cálida ya que se considera que es más adecuada con el tema y el target que se predefinió. Así mismo, se conserva un diseño simple _minimalista_ para no distraer al usuarix al utilizar la plataforma.
@@ -123,28 +125,28 @@ En este proceso de diseño y rediseño de la funcionalidad principal me ayudaba 
 
 En esta sección se identifica los objetivos de aprendizaje que cumplí a lo largo de este primer proyecto:
 * [x] Uso de HTML semántico
-* [ ] Uso de selectores de CSS
-* [ ] Modelo de caja (box model): borde, margen, padding
-* [ ] Uso de selectores del DOM
+* [X] Uso de selectores de CSS
+* [X] Modelo de caja (box model): borde, margen, padding
+* [X] Uso de selectores del DOM
 * [ ] Manejo de eventos del DOM (listeners, propagación, delegación)
 * [ ] Manipulación dinámica del DOM
-* [ ] Tipos de datos primitivos
-* [ ] Strings (cadenas de caracteres)
-* [ ] Variables (declaración, asignación, ámbito)
-* [ ] Uso de condicionales (if-else, switch, operador ternario, lógica booleana)
-* [ ] Uso de bucles/ciclos (while, for, for..of)
-* [ ] Funciones (params, args, return)
-* [ ] Pruebas unitarias (unit tests)
-* [ ] Módulos de ECMAScript (ES Modules)
-* [ ] Uso de linter (ESLINT)
-* [ ] Uso de identificadores descriptivos (Nomenclatura y Semántica)
-* [ ] Git: Instalación y configuración
-* [ ] Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)
-* [ ] GitHub: Creación de cuenta y repos, configuración de llaves SSH
-* [ ] GitHub: Despliegue con GitHub Pages
-* [ ] Diseñar un producto o servicio poniendo a la usuaria en el centro
-* [ ] Crear prototipos de alta fidelidad que incluyan interacciones
-* [ ] Seguir los principios bádsicos de diseño visual
+* [X] Tipos de datos primitivos
+* [X] Strings (cadenas de caracteres)
+* [X] Variables (declaración, asignación, ámbito)
+* [X] Uso de condicionales (if-else, switch, operador ternario, lógica booleana)
+* [X] Uso de bucles/ciclos (while, for, for..of)
+* [X] Funciones (params, args, return)
+* [X] Pruebas unitarias (unit tests)
+* [X] Módulos de ECMAScript (ES Modules)
+* [X] Uso de linter (ESLINT)
+* [X] Uso de identificadores descriptivos (Nomenclatura y Semántica)
+* [X] Git: Instalación y configuración
+* [X] Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)
+* [X] GitHub: Creación de cuenta y repos, configuración de llaves SSH
+* [X] GitHub: Despliegue con GitHub Pages
+* [X] Diseñar un producto o servicio poniendo a la usuaria en el centro
+* [X] Crear prototipos de alta fidelidad que incluyan interacciones
+* [X] Seguir los principios bádsicos de diseño visual
 
 ## 6. Scrum
 
@@ -157,3 +159,7 @@ Me gustaría recalcar que durante este proceso de desarrollo trabajé de forma i
 Uno de los retos más grandes de este proyecto fue lidiar con la incertidumbre de conocer poco sobre los temas que se iban a abordar, lo cual no me permitía tener una planeación precisa de ¿qué hacer? o ¿cuándo? o ¿cómo? Afortunadamente, explorando los recursos propuestos por el equipo de Laboratoria, lxs coaches y mis compañerxs logré determinar una planeación general y achicar los retos que iba afrontando día con día. Una herramienta que me ayudó mucho a organizar mi tiempo e ir avanzando fue realizar un tablero de tareas en Trello.
 
 Finalmente me gustaría mencionar que previo a los eventos de maquetación se realizó la intalación de Git, VSCode y Node JS para poder trabajar adecuadamente en el repositorio local y conectar la información a la web.
+
+## 8. Usa la app
+
+[Des-cifrando el código del amor](https://menamilochomil.github.io/CDMX013-cipher-12-07/)
