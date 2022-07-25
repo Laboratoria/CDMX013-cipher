@@ -9,11 +9,12 @@ padding: 2em
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 #rootTitle {
     background-color:#9B0808;
     color: #ffffff;
+    border-radius: 10px;
     font-size: 20px;
     font-weight: normal ;
     font-family: "Arial" sans serif;
@@ -21,7 +22,7 @@ padding: 2em
     width: 70%;
     margin-left: 1em;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 /* En el padding cuando tienes 4 datos son arriba, derecha, abajo e izquierda. Con dos datos como ahora solo son arriba y abajo; izquierda y derecha
 padding: 0px 150px;*/
@@ -30,6 +31,7 @@ El padding asigna hasta donde llega el relleno, sin el fondo del texto estaría 
 #rootFirstView{
     padding: 1em 2em;
     background-color:#F9EAEA;
+    border-radius: 7px;
     color:#000000;
     text-align: justify;
     text-justify: inter-word;
@@ -47,9 +49,11 @@ El padding asigna hasta donde llega el relleno, sin el fondo del texto estaría 
 #buttonOne{
     background-color:#F9EAEA;
     color: #000000;
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: #9B0808;
     display: flex;
     justify-content:center;
-    border-color: #9B0808;
     font-size: 20px;
     font-weight: normal ;
     font-family: "Arial" sans serif;
@@ -78,6 +82,7 @@ El padding asigna hasta donde llega el relleno, sin el fondo del texto estaría 
     width: 350px;
     height: 300px;
     background: #F9EAEA;
+    border-radius: 5px;
     border: 1px solid #000000;
 }
 
@@ -89,19 +94,20 @@ El padding asigna hasta donde llega el relleno, sin el fondo del texto estaría 
 }
 
 #numberSelect{
-  border: 1px solid blue;
-  background-color: aliceblue;
+    border-radius: 3px;
+    border: 1px solid blue;
+    background-color: aliceblue;
 }
 
-/*Diseño de los botones accionables para */
+/*Diseño de los botones accionables gral */
 .decipherMessage {
     display: flex;
     justify-content:center;
     gap: 10px;
 }
 
-/*Diseño de los botones particularmente*/
-#buttonSelectNumber{
+/*Diseño de los botones individual*/
+/*#buttonSelectNumber{
     padding: 15px 25px;
     width: 154px;
     height: 33px;
@@ -115,7 +121,7 @@ El padding asigna hasta donde llega el relleno, sin el fondo del texto estaría 
     border: #9B0808;
     border-radius: 10px;
     box-shadow: 0 9px #999;
-}
+}*/
 
 #cipherButton {
     padding: 15px 25px;
@@ -148,6 +154,18 @@ El padding asigna hasta donde llega el relleno, sin el fondo del texto estaría 
     border-radius: 10px;
     box-shadow: 0 9px #999;
 } 
+#linkOne{
+    color: #0f12d0;
+    font-size: 15px;
+    font-weight: normal ;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    width: 70%;
+    margin-left: 1em;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
 
 /*#decipherMessage{
     background-color: none;
