@@ -23,7 +23,7 @@ function encode() {
         alert("Por favor ingresa el mensaje")
     } else {*/
 //ya funciona el innerHTML y también se puede obtener con .value
-        printAnswer.innerHTML = cipher.encode(offset, string);
+        printAnswer.value = cipher.encode(offset, string);
 }
 
 
