@@ -15,7 +15,7 @@ function encode() {
     let offset = (document.getElementById("numberSelect").value);
     let inputText = document.getElementById("cipherBox").value;
     let printAnswer = document.getElementById("decipherBox");
-    let string = inputText.toUpperCase();
+    let textEncode = inputText.toUpperCase();
     
      /*if (offset !== Number || offset < 0) {
         alert("Por favor ingresa un número")
@@ -23,7 +23,7 @@ function encode() {
         alert("Por favor ingresa el mensaje")
     } else {*/
 //ya funciona el innerHTML y también se puede obtener con .value
-        printAnswer.value = cipher.encode(offset, string);
+        printAnswer.value = cipher.encode(offset, textEncode);
 }
 
 
@@ -31,14 +31,14 @@ function decode() {
     let offset = document.getElementById("numberSelect").value;
     let inputText = document.getElementById("decipherBox").value;
     let printAnswer = document.getElementById("cipherBox");
-    let string = inputText.toUpperCase();
+    let textDecode = inputText.toUpperCase();
     
     /*if (offset !== Number || offset < 0) {
         alert("Por favor ingresa un número")
     } else if (string == "" ) {
         alert("Por favor ingresa el mensaje a decodificar")
     } else {*/
-        printAnswer.value = cipher.decode(offset, string);
+        printAnswer.value = cipher.decode(offset, textDecode);
     
 }
 
