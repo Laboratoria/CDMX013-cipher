@@ -22,23 +22,24 @@ function encode() {
     } else  if (string == "" ) {
         alert("Por favor ingresa el mensaje")
     } else {*/
-        printAnswer.value = cipher.encode(offset, string);
-    }
+//ya funciona el innerHTML y también se puede obtener con .value
+        printAnswer.innerHTML = cipher.encode(offset, string);
+}
 
 
 function decode() {
-    let offset = parseInt(document.getElementById("numberSelect").value);
+    let offset = document.getElementById("numberSelect").value;
     let inputText = document.getElementById("decipherBox").value;
     let printAnswer = document.getElementById("cipherBox");
     let string = inputText.toUpperCase();
     
     /*if (offset !== Number || offset < 0) {
         alert("Por favor ingresa un número")
-    } else */if (string == "" ) {
+    } else if (string == "" ) {
         alert("Por favor ingresa el mensaje a decodificar")
-    } else {
+    } else {*/
         printAnswer.value = cipher.decode(offset, string);
-    }
+    
 }
 
 //Llamando a las funciones principales mediante el DOM
