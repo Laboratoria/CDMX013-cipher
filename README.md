@@ -14,6 +14,7 @@
   - [5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
   - [6. Scrum](#6-scrum)
   - [7. Consideraciones finales](#7-consideraciones-finales)
+  - [8. Usa la app](#8-usa-la-app)
 
 ***
 
