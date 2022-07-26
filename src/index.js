@@ -9,7 +9,7 @@ let getCipherText2 =document.getElementById("cipherFunction2"); //id está en bo
 //let string2 = document.getElementById("message2"); // id está en el texto de entrada
 //let offset2 = document.getElementById("offsetID2");// id enté en el dato que ingresa offset
 
-    
+
     if(getCipherText === null){   
         //hacemos lo que se requiera en caso de que la variable contenga null
         //si getChipherText es null, es porque NO estamos en cifrar sino en DESCIFRAR  
