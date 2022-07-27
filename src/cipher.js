@@ -1,74 +1,58 @@
 
 
 const cipher = {
+
+  encode: function (offset, string) {
+
+    let result = ''; //acá se acumularan los resultados de las operaciones de cada caracter
   
-     encode: function (offset, string) {
-        
-        let m = '';
-        let SToN="";
-        let j="";
 
-  if (document.getElementById("offsetID").value < 0 || document.getElementById("offsetID").value == 0 ){
-          alert(" 😱 Por favor introduce un número positivo mayor a cero ➕ 😊")
+    for (let i = 0; i < string.length; i++) {
+      const character = string.charCodeAt(i); // de cadena a numero ascii
 
-  } else {
-        
-        for(let i=0; i<string.length; i++){
-            
-            SToN =string.charCodeAt(i);//string to number
-          if(SToN != 32){  
-            
-             j = Math.abs(SToN - 65 + offset) % 26 + 65; //Convierte a numero y hago operaciones para cifrado
-             m += String.fromCharCode(j); //devuelve a ASCII
-            }else {
-            m += String.fromCharCode(SToN);
-            }
-        }  
-        return m;
-}
-      },
-//////////////////////////////////////////////////////////////////
-    decode: function (offset, string) {
-    let m = '';
-      let SToN="";
-      let j="";
+      if (65 <= character && character <= 90) {   //letras mayúsculas
+        const newCharacter = String.fromCharCode((character - 65 + offset) % 26 + 65);
+        result += newCharacter;
+      } else if (97 <= character && character <= 122) {  //letras minúsculas
+        const newCharacter = String.fromCharCode((character - 97 + offset) % 26 + 97);
+        result += newCharacter;
+      } else {                                    // otros caracteres que no sean letras las deja igual
+        result += String.fromCharCode(character);//considerando cualquier otro caracter que no sea letra
+      }
+    }
+    return result;
 
-  if (document.getElementById("offsetID").value < 0 || document.getElementById("offsetID").value == 0 ){
-        alert(" 😱 Por favor introduce un número positivo mayor a cero ➕ 😊")
+  },
+  //////////////////////////////////////////////////////////////////
+  decode: function (offset, string) {
 
-  //} else if{
+    let result = '';
+    offset = 26 - (offset % 26); //offset es ahora el "complemento del modulo" si offset es 7 por ejemplo ahora sera 27-7=19
+                                 
 
-  }else{
-      
-      for(let i=0; i<string.length; i++){
-          SToN =string.charCodeAt(i);//string to number
+    for (let i = 0; i < string.length; i++) {
+      const character = string.charCodeAt(i); // de cadena a número ascii
 
-          
-              let g = (SToN -65 - offset) 
-        if(SToN == 32){
-          m += String.fromCharCode(SToN); 
-        }else { 
-              if(g<0){
-                
-                j = 91 + (g % 26);
-              
-                m += String.fromCharCode(j); //devuelve a ASCII
-                //console.log(m)
-
-              }else{
-
-              j = (SToN -65 - offset) % 26 + 65; //Convierte a numero y hago operaciones para cifrado
-              m += String.fromCharCode(j); //devuelve a ASCII
-              }  
-        }
-      }  
-      return m;
+      if (65 <= character && character <= 90) {   //letras mayúsculas
+        const newCharacter = String.fromCharCode((character - 65 + offset) % 26 + 65);
+        result += newCharacter;
+      } else if (97 <= character && character <= 122) {  //letras minúsculas
+        const newCharacter = String.fromCharCode((character - 97 + offset) % 26 + 97);
+        result += newCharacter;
+      } else {                                    // otros caracteres que no sean letras las deja igual
+        result += String.fromCharCode(character);//considerando cualquier otro caracter que no sea letra
+      }
+    }
+    return result;
   }
-}
 };
 
 
-
+//console.log(cipher.encode(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ"));//"HIJKLMNOPQRSTUVWXYZABCDEFG"
+//console.log(cipher.decode(33, "HIJKLMNOPQRSTUVWXYZABCDEFG"));//"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//console.log(cipher.encode(33, "HOLA MUNDO"));//"HIJKLMNOPQRSTUVWXYZABCDEFG"
+//console.log(cipher.decode(33, "OVSH TBUKV"));//"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//console.log(cipher.decode(27, "A B C . +"));//"ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 export default cipher;
 ////////////////////////
