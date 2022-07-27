@@ -17,11 +17,11 @@ const cipher = {
         let inputTextUpper = (newCode - 65 + offsetNum) % 26 + 65;
         let inputRewrite = String.fromCharCode(inputTextUpper);
         yourTextEncode += inputRewrite;
-      } else if(newCode <= 122 && newCode >= 97) {
-          let inputTextLower = (newCode - 97 + offsetNum) % 26 + 97;
-          let inputRewrite = String.fromCharCode(inputTextLower);
-          yourTextEncode += inputRewrite;
-      } else if(newCode <= 64 && newCode >= 32) {
+      } else if (newCode <= 122 && newCode >= 97) {
+        let inputTextLower = (newCode - 97 + offsetNum) % 26 + 97;
+        let inputRewrite = String.fromCharCode(inputTextLower);
+        yourTextEncode += inputRewrite;
+      } else if (newCode <= 64 && newCode >= 32) {
         let inputTextSpecial = newCode;
         let inputRewrite = String.fromCharCode(inputTextSpecial);
         yourTextEncode += inputRewrite;
@@ -38,14 +38,23 @@ const cipher = {
 
     let yourTextDecode = [];
     for (let i = 0; i < textDecode.length; i++) {
-      let newCode1 = textDecode.charCodeAt(i);
+      let newDecode = textDecode.charCodeAt(i);
       let offsetNum = parseInt(offset);
       //Caesar decryption designed formula ((x +65 - #posición) % 26 +65)
-      let inputTextForm = (newCode1 + 65 - offsetNum) % 26 + 65;
-      let inputRewrite = String.fromCharCode(inputTextForm);
-      yourTextDecode += inputRewrite;
+      if (newDecode <= 90 && newDecode >= 65) {
+        let inputTextUpper = (newDecode + 65 - offsetNum) % 26 + 65;
+        let inputRewrite = String.fromCharCode(inputTextUpper);
+        yourTextDecode += inputRewrite;
+      } else if (newDecode <= 122 && newDecode >= 97) {
+        let inputTextLower = (newDecode - 122 - offsetNum) % 26 + 122;
+        let inputRewrite = String.fromCharCode(inputTextLower);
+        yourTextDecode += inputRewrite;
+      } else if (newDecode <= 64 && newDecode >= 32) {
+        let inputTextSpecial = newDecode;
+        let inputRewrite = String.fromCharCode(inputTextSpecial);
+        yourTextDecode += inputRewrite;
+      }
     }
-
     return yourTextDecode;
   }
 

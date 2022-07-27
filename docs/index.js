@@ -17,9 +17,8 @@ function encode() {
 
 function decode() {
     let offset = document.getElementById("numberSelect").value;
-    let inputText = document.getElementById("decipherBox").value;
+    let textDecode = document.getElementById("decipherBox").value;
     let printAnswer = document.getElementById("cipherBox");
-    let textDecode = inputText.toUpperCase();
     printAnswer.value = cipher.decode(offset, textDecode);
 }
 
