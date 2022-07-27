@@ -14,17 +14,17 @@ const cipher = {
 
       //Fomula Caesar cipher:  ((ASCII - 65 + #offset)% 26 +65)
       if (newCode <= 90 && newCode >= 65) {
-        let inputTextUpper = (newCode - 65 + offsetNum) % 26 + 65;
-        let inputRewrite = String.fromCharCode(inputTextUpper);
-        yourTextEncode += inputRewrite;
+        let inputTextUpper = String.fromCharCode((newCode - 65 + offsetNum) % 26 + 65);
+        yourTextEncode += inputTextUpper;
       } else if (newCode <= 122 && newCode >= 97) {
-        let inputTextLower = (newCode - 97 + offsetNum) % 26 + 97;
-        let inputRewrite = String.fromCharCode(inputTextLower);
-        yourTextEncode += inputRewrite;
+        let inputTextLower = String.fromCharCode((newCode - 97 + offsetNum) % 26 + 97);
+        yourTextEncode += inputTextLower;
       } else if (newCode <= 64 && newCode >= 32) {
-        let inputTextSpecial = newCode;
-        let inputRewrite = String.fromCharCode(inputTextSpecial);
-        yourTextEncode += inputRewrite;
+        let inputTextSpecial = String.fromCharCode(newCode);
+        yourTextEncode += inputTextSpecial;
+      } else if(newCode === 191 || newCode === 161 || newCode===241){
+        let inputTextSpecial = String.fromCharCode(newCode);
+        yourTextEncode += inputTextSpecial;
       }
     }
     return yourTextEncode;
@@ -42,17 +42,17 @@ const cipher = {
       let offsetNum = parseInt(offset);
       //Caesar decryption designed formula ((x +65 - #posición) % 26 +65)
       if (newDecode <= 90 && newDecode >= 65) {
-        let inputTextUpper = (newDecode + 65 - offsetNum) % 26 + 65;
-        let inputRewrite = String.fromCharCode(inputTextUpper);
-        yourTextDecode += inputRewrite;
+        let inputTextUpper = String.fromCharCode((newDecode - 90 - offsetNum) % 26 + 90);
+        yourTextDecode += inputTextUpper;
       } else if (newDecode <= 122 && newDecode >= 97) {
-        let inputTextLower = (newDecode - 122 - offsetNum) % 26 + 122;
-        let inputRewrite = String.fromCharCode(inputTextLower);
-        yourTextDecode += inputRewrite;
+        let inputTextLower = String.fromCharCode((newDecode - 122 - offsetNum) % 26 + 122);
+        yourTextDecode += inputTextLower;
       } else if (newDecode <= 64 && newDecode >= 32) {
-        let inputTextSpecial = newDecode;
-        let inputRewrite = String.fromCharCode(inputTextSpecial);
-        yourTextDecode += inputRewrite;
+        let inputTextSpecial = String.fromCharCode(newDecode);
+        yourTextDecode += inputTextSpecial;
+      }else if(newDecode === 191 || newDecode === 161 || newDecode===241){
+        let inputTextSpecial = String.fromCharCode(newDecode);
+        yourTextDecode += inputTextSpecial;
       }
     }
     return yourTextDecode;
