@@ -10,9 +10,8 @@ const outputButton = document.getElementById("decipherButton");
 //Bringing info to the interface
 function encode() {
     let offset = (document.getElementById("numberSelect").value);
-    let inputText = document.getElementById("cipherBox").value;
+    let textEncode = document.getElementById("cipherBox").value;
     let printAnswer = document.getElementById("decipherBox");
-    let textEncode = inputText.toUpperCase();
     printAnswer.value = cipher.encode(offset, textEncode);
 }
 
