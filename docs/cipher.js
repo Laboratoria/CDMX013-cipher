@@ -22,7 +22,7 @@ const cipher = {
       } else if (newCode <= 64 && newCode >= 32) {
         let inputTextSpecial = String.fromCharCode(newCode);
         yourTextEncode += inputTextSpecial;
-      } else if(newCode === 191 || newCode === 161 || newCode===241){
+      } else if(newCode === 191 || newCode === 161 || newCode===241 || newCode===209){
         let inputTextSpecial = String.fromCharCode(newCode);
         yourTextEncode += inputTextSpecial;
       }
@@ -40,7 +40,7 @@ const cipher = {
     for (let i = 0; i < textDecode.length; i++) {
       let newDecode = textDecode.charCodeAt(i);
       let offsetNum = parseInt(offset);
-      //Caesar decryption designed formula ((x +65 - #posición) % 26 +65)
+      //Caesar decryption designed formula ((x -90 - #posición) % 26 +90)
       if (newDecode <= 90 && newDecode >= 65) {
         let inputTextUpper = String.fromCharCode((newDecode - 90 - offsetNum) % 26 + 90);
         yourTextDecode += inputTextUpper;
@@ -50,7 +50,7 @@ const cipher = {
       } else if (newDecode <= 64 && newDecode >= 32) {
         let inputTextSpecial = String.fromCharCode(newDecode);
         yourTextDecode += inputTextSpecial;
-      }else if(newDecode === 191 || newDecode === 161 || newDecode===241){
+      }else if(newDecode === 191 || newDecode === 161 || newDecode===241 || newDecode===209){
         let inputTextSpecial = String.fromCharCode(newDecode);
         yourTextDecode += inputTextSpecial;
       }

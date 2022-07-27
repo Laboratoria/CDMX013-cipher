@@ -7,6 +7,7 @@ import cipher from './cipher.js';
 const inputButton = document.getElementById("cipherButton");
 const outputButton = document.getElementById("decipherButton");
 
+
 //Bringing info to the interface
 function encode() {
     let offset = (document.getElementById("numberSelect").value);
