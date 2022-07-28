@@ -1,59 +1,54 @@
 const cipher = {  // Esta guardando las funciones dentro de un objeto
-// toda la logica
- encode:function(offset,plainText){
-  let solved = ""
-    if(typeof offset == 'number' && typeof plainText == 'string'){
-    
-    for (let i = 0; i< plainText.length; i++){
+  // toda la logica
+  encode: function (offset, plainText) {
+    let solved = ""
+    if (typeof offset == 'number' && typeof plainText == 'string') {
+
+      for (let i = 0; i < plainText.length; i++) {
         let asciiNum = plainText[i].charCodeAt();
         //console.log(asciiNum);
-        if (asciiNum >= 65 && asciiNum <= 90){
-          let codedMessage = (asciiNum - 65 + offset) %26 + 65;
+        if (asciiNum >= 65 && asciiNum <= 90) {
+          let codedMessage = (asciiNum - 65 + offset) % 26 + 65;
           //console.log(codedMessage);
           solved += String.fromCharCode(codedMessage);
-         // console.log("solved",solved);
-        } else if (asciiNum >= 97 && asciiNum <= 122){
-            let codedMessage = (asciiNum - 97 + offset) %26 + 97;
-            //console.log(codedMessage);
-            solved += String.fromCharCode(codedMessage);
-          } 
-    } 
-    return solved; 
-    //console.log(solved); 
-  }else {
-   throw TypeError('wrong argument type');
-  }
-  },
-  decode:function(offset,outputText){
-    if(typeof offset == 'number' && typeof outputText == 'string'){
-    let result = ""
-    for(let i = 0; i< outputText.length; i++){
-      let asciiNum = outputText[i].charCodeAt();
-      //console.log(asciiNum); 
-      if (asciiNum >=65 && asciiNum <=90){
-        let decodedMsg = asciiNum -(offset%26);
-        if (asciiNum < 65){
-          decodedMsg = asciiNum -(offset%26);
-          //console.log(decodedMsg + 'esta imprimiendo esto');
-          //result += String.fromCharCode(decodedMsg);
+          // console.log("solved",solved);
+        } else if (asciiNum >= 97 && asciiNum <= 122) {
+          let codedMessage = (asciiNum - 97 + offset) % 26 + 97;
+          //console.log(codedMessage);
+          solved += String.fromCharCode(codedMessage);
         }
-        //console.log(decodedMsg);
-        result += String.fromCharCode(decodedMsg);
-      //  console.log(result);
-      } else if (asciiNum >=97 && asciiNum <=122){
-          let decodedMsg = asciiNum -(offset%26)
-         // console.log(decodedMsg);
-          result += String.fromCharCode(decodedMsg);
       }
+      return solved;
+      //console.log(solved); 
+    } else {
+      throw TypeError('wrong argument type');
     }
-    return result;
-  //return unsolved;
-  
-  }else {
-  throw TypeError('wrong argument type')
-}
-}
-}
+  },
+  decode: function (offset, outputText) {
+    if (typeof offset == 'number' && typeof outputText == 'string') {
+      let result = ""
+      // 33 -> 33%26 = 7. el "complemento de 7 a 26 es 19 o la resta de 26 y 7 = 19"
+      // 26 - 7 = 19
+      // 26 - (33%26) = 19
+      offset = 26 - (offset % 26);
+      for (let i = 0; i < outputText.length; i++) {
+        let asciiNum = outputText[i].charCodeAt();
+        //console.log(asciiNum); 
+        if (asciiNum >= 65 && asciiNum <= 90) {
+          let codedMessage = (asciiNum - 65 + offset) % 26 + 65;
+          result += String.fromCharCode(codedMessage);
+          //  console.log(result);
+        } else if (asciiNum >= 97 && asciiNum <= 122) {
+          let codedMessage = (asciiNum - 97 + offset) % 26 + 97;
+          // console.log(decodedMsg);
+          result += String.fromCharCode(codedMessage);
+        }
+      }
+      return result;
 
-
+    } else {
+      throw TypeError('wrong argument type')
+    }
+  }
+}
 export default cipher;
