@@ -11,7 +11,7 @@ const cipher = {
   
 
     for (let i = 0; i < string.length; i++) {
-      const character = string.charCodeAt(i); // de cadena a numero ascii
+      const character = string.charCodeAt(i); // de cadena a numero ascii  
 
       if (65 <= character && character <= 90) {   //letras mayúsculas
         const newCharacter = String.fromCharCode((character - 65 + offset) % 26 + 65);
