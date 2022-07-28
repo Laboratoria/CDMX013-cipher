@@ -4,6 +4,9 @@ const cipher = {
 
   encode: function (offset, string) {
 
+    if(offset=="") throw (TypeError("Se te olvido ingresar el offset"));
+    if(offset<=0) throw (TypeError("Se te olvido ingresar el offset"));
+
     let result = ''; //acá se acumularan los resultados de las operaciones de cada caracter
   
 
@@ -25,6 +28,9 @@ const cipher = {
   },
   //////////////////////////////////////////////////////////////////
   decode: function (offset, string) {
+
+    if(offset=="") throw (TypeError("Se te olvido ingresar el offset"));
+    if(offset<=0) throw (TypeError("Se te olvido ingresar el offset"));
 
     let result = '';
     offset = 26 - (offset % 26); //offset es ahora el "complemento del modulo" si offset es 7 por ejemplo ahora sera 27-7=19

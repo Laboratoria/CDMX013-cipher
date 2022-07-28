@@ -13,10 +13,12 @@ if (getCipherText === null) {
     //hacemos lo que se requiera en caso de que la variable contenga null
     //si getChipherText es null, es porque NO estamos en cifrar sino en DESCIFRAR  
     getCipherText2.addEventListener("click", function (event) {
-        if (offset === null || string === "") {
+        
+        if (offset === null || string === " ") {
             alert(" 😱 Falta ingresar algún dato, por favor asegurate de llenar ambos 📑🖋 😊");
             event.preventDefault(); // Previene recarga del navegador
             document.getElementById("decipherText").innerHTML = "Llena todos datos correctamente 📝 y presiona el botón cifrar de nuevo 📥";
+            
         } else if (document.getElementById("offsetID").value < 0 || document.getElementById("offsetID").value == 0) {
             alert(" 😱 Por favor introduce un número positivo mayor a cero ➕ 😊");
             event.preventDefault(); // Previene recarga del navegador
@@ -32,10 +34,10 @@ if (getCipherText === null) {
 
         if (offset === null || string === "") {
             alert(" 😱 Falta ingresar algún dato, por favor asegurate de llenar ambos 📑🖋 😊");
-            document.getElementById("decipherText").innerHTML = "Llena todos datos correctamente 📝 y presiona el botón cifrar de nuevo 📥";
+            document.getElementById("cipherText").innerHTML = "Llena todos datos correctamente 📝 y presiona el botón cifrar de nuevo 📥";
         } else if (document.getElementById("offsetID").value < 0 || document.getElementById("offsetID").value == 0) {
             alert(" 😱 Por favor introduce un número positivo mayor a cero ➕ 😊");
-            document.getElementById("decipherText").innerHTML = "Llena todos datos correctamente 📝 y presiona el botón cifrar de nuevo 📥";
+            document.getElementById("cipherText").innerHTML = "Llena todos datos correctamente 📝 y presiona el botón cifrar de nuevo 📥";
         } else {
             event.preventDefault(); // Previene recarga del navegador
             document.getElementById("cipherText").innerHTML = "Tu mensaje cifrado es: " + cipher.encode(Number(offset.value), string.value);
