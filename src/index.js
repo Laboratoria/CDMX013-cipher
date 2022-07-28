@@ -7,33 +7,28 @@ console.log(cipher);
 
 const entrada = document.getElementById("btncodif");
 const offSet = document.getElementById("offset");
-let finalTxt = '';
-//console.log(entrada)
 entrada.addEventListener("click", function(){
     const text = document.getElementById("txt");
     const textvalue = text.value;
+    let finalTxt = "";
     const offsetValue = Number(offset.value);
-       // console.log(text)
-    
-    for (let i = 0; i < textvalue.length; i++){
-        let textoCifrado = (textvalue.charCodeAt(i)-65)+offsetValue;
-        finalTxt += textoCifrado
-       //console.log(textvalue[i])
-       //console.log((textvalue.charCodeAt(i)-65)+offsetValue);
+     
+   for (let i = 0; i < textvalue.length; i++){
+        let textoCifrado = textvalue[i].charCodeAt();
+        console.log(textoCifrado);
+        if (textoCifrado >=65 && textoCifrado <=90){
+            let codedMsg = (textoCifrado - 65 + offsetValue) %26 + 65;
+            //console.log (codedMsg)
+            //console.log(textoCifrado)*/
+            finalTxt += String.fromCharCode(codedMsg);
+       }   console.log(textvalue[i])
+            console.log((textvalue.charCodeAt(i)-65)+offsetValue);
+            console.log(finalTxt)
     }
-    let texto = String.fromCharCode(65);
-    document.getElementById("rslt").value = finalTxt
-        
+        rslt.innerHTML = finalTxt;
 })
 
 const resultado = document.getElementById("btndecodif");
 resultado.addEventListener("click", function(){
     document.getElementById("rslt").innerText = "Tu mensaje está listo";
 })
-
-
-/*
-cadena.toUpperCase() //sirve para que las letras que se introduzcan se conviertan en mayúsculas
-charCode() .fromCharCode() //para convertir las letras a ASCII y viceversa
-
-*/
