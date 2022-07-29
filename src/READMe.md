@@ -4,7 +4,7 @@
 
 * [1. Objetivo de esta página](#1-Objetivo de esta página)
 * [2. Proceso y decisiones de diseño.](#2-Proceso y decisiones de diseño.)
-* [3. Como ayuda está página a los usuarios.](#3-objetivos-de-aprendizaje)
+* [3. Como ayuda está página a los usuarios.](#3 Como ayuda está página a los usuarios)
 * [4. Cómo descargar, instalar y ejecutar la aplicación](#4-Cómo descargar, instalar y ejecutar la aplicación)
 
 ***
