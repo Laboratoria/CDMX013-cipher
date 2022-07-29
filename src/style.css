@@ -79,6 +79,10 @@ p{
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
 }
+.btn:hover {
+    background-color:#A560BC;
+    transition: 0.7s;
+}
 
 #container2{
     display: flex;
@@ -117,6 +121,14 @@ opacity: 0.5;
     padding: 5px;
 }
 
+#boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+
+}
+
 #cifrar{
     margin-top: 25px;
 }
@@ -131,6 +143,8 @@ opacity: 0.5;
 
 #goBack{
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C794D8;
     color: white;
     width: 30px;
@@ -142,8 +156,13 @@ opacity: 0.5;
     font-family: 'Montserrat', sans-serif; 
 }
 #goBack img{
-    height: 24px;
-    text-align: center;
+    height: 22px;
+   /* align-items: center;*/
+    justify-content: center;
+}
+#goBack:hover {
+    background-color:#A560BC;
+    transition: 0.7s;
 }
 
 #txt{

@@ -16,25 +16,12 @@ btnDecode.addEventListener('click', function () {
     document.getElementById('plainText').innerHTML = cipher.decode(offset, outputText);
 });
 
-const btnAtras = document.getElementById('goBack');
-btnAtras.addEventListener('click', goBack);
-function goBack() {
-    document.getElementById('container2').style.display = 'none';
-    document.getElementById('areaTexts').style.display = 'none';
-    document.getElementById('goBack').style.display = 'flex';
-    document.getElementById('hi').style.display = 'flex';
-    document.getElementById('centrar').style.display = 'flex';
-    document.getElementById('boton').style.display = 'none';
-    document.getElementById('txt').style.display = 'none';
-    document.getElementById('offset').style.display = 'flex';
-
-}
-
 //Sirve para ocultar estos elementos al cargar el html. 
 //Al no estar dentro de una funcion permite que se escondan estos elementos.
 document.getElementById('container2').style.display = 'none';
 document.getElementById('areaTexts').style.display = 'none';
 document.getElementById('goBack').style.display = 'none';
+
 //funcion para mostrar los elementos ocultos
 const boton = document.getElementById('boton');
 boton.addEventListener('click', showScreen);
@@ -47,6 +34,20 @@ function showScreen() {
     document.getElementById('boton').style.display = 'none';
     document.getElementById('txt').style.display = 'none';
     document.getElementById('offset').style.display = 'none';
+}
+
+const btnAtras = document.getElementById('goBack');
+btnAtras.addEventListener('click', goBack);
+function goBack() {
+    document.getElementById('container2').style.display = 'none';
+    document.getElementById('areaTexts').style.display = 'none';
+    document.getElementById('goBack').style.display = 'none';
+    document.getElementById('hi').style.display = 'flex';
+    document.getElementById('centrar').style.display = 'flex';
+    document.getElementById('boton').style.display = 'flex';
+    document.getElementById('txt').style.display = 'none';
+    document.getElementById('offset').style.display = 'flex';
+
 }
 
 //Funcion para borrar las areas de texto
