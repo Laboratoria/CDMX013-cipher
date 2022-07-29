@@ -49,7 +49,7 @@ button{
     color:beige;
     background-color: #D09B11;
     box-shadow: 5px 3px 3px #b8b7b7;
-    cursor: pointer;
+    cursor: pointer; /*manita al seleccionar el botón */
 }
 
 
