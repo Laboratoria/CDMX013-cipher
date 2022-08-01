@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header id="logo">
-      <img src="images/teachat.png">
-    </header>
 
-    <main id="container"> <!--representa contenido principal del body-->
-        <figure id="centrar">
-          <img src="images/tea-blanco.png" alt="logo_blanco">
-        </figure>
-        <p id="hi">¡Hola!</p>
-        <p id="txt">Escoge número clave para cifrar:</p>
-        <input id="offset" type="number" min="1" max="13">
-        <button id="boton" class="btn">Start</button>
-      <div id="container2">
-        <button id="cifrar" class="btn" value="cifrar">Cifrar</button>
-        <button id ="btnDecode" class="btn" value="descifrar">Descifrar</button>
-        <button id="btnClear" class="btn">Borrar</button>
-      </div>
-      <div id="areaTexts">
-        <textarea id="plainText" rows="7" cols="25" placeholder="Escribe tu mensaje"></textarea>
-        <textarea id="input2" rows="7" cols="25" placeholder="Mensaje cifrado"></textarea>
-      </div>
-      <div>
-        <button id="goBack" class="btn"><img src="images/flecha.png"/></button>
-      </div>
-      
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    </main>
-    <!--<footer>Ya puedes cifrar para tu chat</footer>-->
-    
-    <!--
+<body>
+  <header id="logo">
+    <img src="images/teachat.png">
+  </header>
+
+  <main id="container">
+    <!--representa contenido principal del body-->
+    <figure id="centrar">
+      <img src="images/tea-blanco.png" alt="logo_blanco">
+    </figure>
+    <p id="hi">¡Hola!</p>
+    <p id="txt">Escoge número clave para cifrar:</p>
+    <input id="offset" type="number" min="1" max="13">
+    <button id="boton" class="btn">Start</button>
+    <div id="container2">
+      <button id="cifrar" class="btn" value="cifrar">Cifrar</button>
+      <button id="btnDecode" class="btn" value="descifrar">Descifrar</button>
+      <button id="btnClear" class="btn">Borrar</button>
+    </div>
+    <div id="areaTexts">
+      <textarea id="plainText" rows="7" cols="25" placeholder="Escribe tu mensaje"></textarea>
+      <textarea id="decodedTxt" rows="7" cols="25" placeholder="Descifra tu mensaje"></textarea>
+    </div>
+    <div>
+      <button id="goBack" class="btn"><img src="images/flecha.png" /></button>
+    </div>
+
+
+  </main>
+  <!--<footer>Ya puedes cifrar para tu chat</footer>-->
+
+  <!--
     <div id="root">
       <h1>Hello world!</h1>
     </div>-->
-  
-    <script src="index.js" type="module"></script>
-  </body>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

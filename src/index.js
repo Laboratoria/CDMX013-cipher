@@ -5,15 +5,15 @@ btnCifrar.addEventListener('click', function () {
     let plainText = document.getElementById('plainText').value;
     let offset = parseInt(document.getElementById('offset').value); // parseInt() convierte un string a un entero
     //manda a llamar a la funcion dentro del objeto, y le pasa los valores de offset e input a cipher.js
-    document.getElementById('input2').innerHTML = cipher.encode(offset, plainText);
+    document.getElementById('decodedTxt').value = cipher.encode(offset, plainText);
 
 });
 
 const btnDecode = document.getElementById('btnDecode');
 btnDecode.addEventListener('click', function () {
-    let outputText = document.getElementById('input2').value;
+    let decodedTxt = document.getElementById('decodedTxt').value;
     let offset = parseInt(document.getElementById('offset').value); // parseInt() convierte un string a un entero
-    document.getElementById('plainText').innerHTML = cipher.decode(offset, outputText);
+    document.getElementById('plainText').value = cipher.decode(offset, decodedTxt);
 });
 
 //Sirve para ocultar estos elementos al cargar el html. 
@@ -55,7 +55,7 @@ let btnClear = document.getElementById('btnClear');
 btnClear.addEventListener('click', clearText)
 function clearText() {
     document.getElementById('plainText').value = '';
-    document.getElementById('input2').value = '';
-    document.getElementById('offset').value = '';
+    document.getElementById('decodedTxt').value = '';
+    //  document.getElementById('offset').value = '';
 }
 

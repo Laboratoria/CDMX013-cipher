@@ -1,13 +1,15 @@
-*{
+* {
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
-body{
-   background: linear-gradient(360deg, #C3D0E2, #E4CAE8);
-  /*  background-repeat: no-repeat; */
-    background-attachment:fixed; /*determina si la posición de la imagen de fondo será fija dentro de la pantalla*/
-} 
+
+body {
+    background: linear-gradient(360deg, #C3D0E2, #E4CAE8);
+    /*  background-repeat: no-repeat; */
+    background-attachment: fixed;
+    /*determina si la posición de la imagen de fondo será fija dentro de la pantalla*/
+}
 
 #logo img {
     width: 150px;
@@ -18,9 +20,9 @@ body{
     text-align: center;
 }
 
-#container{
+#container {
     width: 50%;
-    height:70%;
+    height: 70%;
     margin: 35px auto 0 auto;
     background-color: #f1adff;
     border-radius: 12px;
@@ -28,6 +30,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 /*
 #centrar{
     display: flex;
@@ -38,26 +41,26 @@ body{
    
 }*/
 
-figure img{
+figure img {
     display: block;
     margin-top: 20px;
     width: 165px;
     height: auto;
 }
 
-#hi{
+#hi {
     font-size: 4em;
     margin: 0;
 }
 
-p{
+p {
     display: flex;
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
-#offset{
+#offset {
     background-color: #f1adff;
     border-radius: 15px;
     border: solid white;
@@ -68,7 +71,7 @@ p{
     /*margin-bottom: 15px;*/
 }
 
-.btn{
+.btn {
     background-color: #C794D8;
     color: white;
     width: 114px;
@@ -79,40 +82,43 @@ p{
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
 }
+
 .btn:hover {
-    background-color:#A560BC;
+    background-color: #A560BC;
     transition: 0.7s;
 }
 
-#container2{
+#container2 {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
-#areaTexts{
+
+#areaTexts {
     display: flex;
     justify-content: center;
     margin: 10px;
     box-sizing: border-box;
 }
-textarea::placeholder{
-color: white;
-opacity: 0.5;
+
+textarea::placeholder {
+    color: white;
+    opacity: 0.5;
 }
 
-#plainText{
-    font-weight:500;
+#plainText {
+    font-weight: 500;
     margin: 10px;
     border-radius: 14px;
     border: solid white 2px;
     background-color: #f1adff;
     color: white;
     padding: 5px;
-    
+
 }
 
-#input2{
-    font-weight:500;
+#decodedTxt {
+    font-weight: 500;
     margin: 10px;
     border-radius: 14px;
     border: solid white 2px;
@@ -129,19 +135,19 @@ opacity: 0.5;
 
 }
 
-#cifrar{
+#cifrar {
     margin-top: 25px;
 }
 
-#btnDecode{
+#btnDecode {
     margin-top: 25px;
 }
 
-#btnClear{
-    margin-top: 25px; 
+#btnClear {
+    margin-top: 25px;
 }
 
-#goBack{
+#goBack {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,19 +159,20 @@ opacity: 0.5;
     border: none;
     border-radius: 15px;
     font-size: 1em;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
-#goBack img{
+
+#goBack img {
     height: 22px;
-   /* align-items: center;*/
+    /* align-items: center;*/
     justify-content: center;
 }
+
 #goBack:hover {
-    background-color:#A560BC;
+    background-color: #A560BC;
     transition: 0.7s;
 }
 
-#txt{
+#txt {
     display: flex;
 }
-
