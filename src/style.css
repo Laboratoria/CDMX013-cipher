@@ -1,0 +1,179 @@
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+    background: linear-gradient(360deg, #C3D0E2, #E4CAE8);
+    /*  background-repeat: no-repeat; */
+    background-attachment: fixed;
+    /*determina si la posición de la imagen de fondo será fija dentro de la pantalla*/
+}
+
+#logo img {
+    width: 150px;
+  
+}
+
+#logo {
+    margin-top: 35px;
+    text-align: center;
+}
+
+#container {
+    width: 50%;
+    height: 70%;
+    margin: 35px auto 0 auto;
+    background-color: #f1adff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+#centrar{
+    display: flex;
+    /*Podemos usar las propiedades de flexbox dentro de un contenedor estableciendo 
+    la propiedad display como flex. Entonces podemos usar la propiedad justify-content: center 
+    para centrar los elementos o imágenes dentro del contenedor horizontalmente. Usar en contenedor padre
+    justify-content: center;
+   
+}*/
+
+figure img {
+    display: block;
+    margin-top: 20px;
+    width: 165px;
+    height: auto;
+}
+
+#hi {
+    font-size: 4em;
+    margin: 0;
+}
+
+p {
+    display: flex;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#offset {
+    background-color: #f1adff;
+    border-radius: 15px;
+    border: solid white;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    /*margin-bottom: 15px;*/
+}
+
+.btn {
+    background-color: #C794D8;
+    color: white;
+    width: 114px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover {
+    background-color: #A560BC;
+    transition: 0.7s;
+}
+
+#container2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#areaTexts {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+textarea::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+#plainText {
+    font-weight: 500;
+    margin: 10px;
+    border-radius: 14px;
+    border: solid white 2px;
+    background-color: #f1adff;
+    color: white;
+    padding: 5px;
+
+}
+
+#decodedTxt {
+    font-weight: 500;
+    margin: 10px;
+    border-radius: 14px;
+    border: solid white 2px;
+    background-color: #f1adff;
+    color: white;
+    padding: 5px;
+}
+
+#boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+
+}
+
+#cifrar {
+    margin-top: 25px;
+}
+
+#btnDecode {
+    margin-top: 25px;
+}
+
+#btnClear {
+    margin-top: 25px;
+}
+
+#goBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C794D8;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#goBack img {
+    height: 22px;
+    /* align-items: center;*/
+    justify-content: center;
+}
+
+#goBack:hover {
+    background-color: #A560BC;
+    transition: 0.7s;
+}
+
+#txt {
+    display: flex;
+}
