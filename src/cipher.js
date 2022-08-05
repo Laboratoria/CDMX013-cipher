@@ -2,6 +2,8 @@ const cipher = {
   // ...
   encode: function(offsetValue, textvalue){
     let unsolvedTxt = "";
+    if (typeof offsetValue == 'number' && typeof textvalue == 'string'){
+      
     for (let i = 0; i < textvalue.length; i++){
       let textoCifrado = textvalue[i].charCodeAt();
       //console.log(textoCifrado);
@@ -15,12 +17,17 @@ const cipher = {
           //console.log (codedMsg)
           unsolvedTxt += String.fromCharCode(codedMsg);
      }
-
   }
   return unsolvedTxt;
+    } else{
+    throw TypeError ("Wrong argument type");
+  
+   }
 },
   decode: function(offsetValue, outputText){
-    let solvedTxt = "";
+    
+    if (typeof offsetValue == 'number' && typeof outputText == 'string'){
+      let solvedTxt = "";
     for (let i = 0; i < outputText.length; i++){
      let textoCifrado = outputText[i].charCodeAt();
      //console.log(textoCifrado)
@@ -35,7 +42,10 @@ const cipher = {
         solvedTxt += String.fromCharCode(decodedMsg);
 }
   }
-  return solvedTxt;
+    return solvedTxt;
+      } else {
+      throw TypeError ('Wrong argument type')
+  }
 }
 }
 export default cipher;
