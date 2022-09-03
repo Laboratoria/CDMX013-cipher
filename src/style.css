@@ -1,0 +1,137 @@
+h1
+
+/*  Diseño header*/
+    {
+    background-color: #c6c589;
+    margin: 3px;
+    height: 98%;
+    padding: 15px;
+    font-size: larger;
+    font-style: italic;
+    text-align: center;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.First
+/*Diseño página principal Main*/
+    {
+    background-color: #546a7b;
+    margin: 3px;
+    width: auto;
+    text-decoration-color: black;
+}
+
+.ParrafoI
+
+/*Diseño área para imágen*/
+    {
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 3px;
+    font-style: normal;
+    font-size: medium;
+    text-align: justify;
+    color: black;
+    align-content: center;
+}
+
+img
+/*imágen*/
+    {
+    width: 100%;
+    display: inline-block;
+    margin: 3px;
+    vertical-align: middle;
+}
+
+.ParrafoD
+/*ärea para mensajes, lado derecho de pantalla principal*/
+    {
+    display: inline-block;
+    margin: 3px;
+    margin-left: 100px;
+}
+
+.messBox
+/*configuración de cajas de mensajes*/
+    {
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #c6c589;
+    margin: 3px;
+    width: 300px;
+    height: 50px;
+    left: 500px;
+}
+
+.offsetBox
+/*configuración de caja de offset*/
+    {
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #c6c589;
+    outline: none;
+    width: 55px;
+    padding: 10px;
+    margin: 3px;
+}
+
+#bC
+
+/*botón codificador*/
+    {
+    background-color: #c9ad47;
+    box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 3px;
+    right: 50;
+}
+
+#bD
+
+/*botón decodificador*/
+    {
+    background-color: #393d3f;
+    box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    color: white;
+    width: 70px;
+    height: 30px;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+nav
+
+/*barra de indicaciones/restricciones*/
+    {
+    background: #546a7b;
+    padding: 10px;
+    margin: 3px;
+    justify-content: space-between;
+}
+
+.piePag
+
+/*configuración de pie de página*/
+    {
+    background-color: #c6c589;
+    height: 100%;
+    padding: 15px;
+    margin: 3px;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
