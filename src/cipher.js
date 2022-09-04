@@ -14,6 +14,10 @@ const cipher = {  //función codificar...*/
       if (letterNo > 64 && letterNo < 91) {
         letterNo = (letterNo - 65 + parseInt(offset)) % 26 + 65;
        } 
+      
+       if (letterNo > 96 && letterNo < 123) {
+        letterNo = (letterNo - 97 + parseInt(offset)) % 26 + 97;
+       } 
        respMess += String.fromCharCode(letterNo);
     }
 
@@ -33,6 +37,13 @@ const cipher = {  //función codificar...*/
       if (letterNo >= 65 && letterNo <= 90) {
         letterNo = (letterNo - 65 - offset) % 26 + 65;
         if (letterNo < 65) {
+          letterNo += 26;
+        }
+        
+       }
+       if (letterNo >= 97 && letterNo <= 122) {
+        letterNo = (letterNo - 97 - offset) % 26 + 97;
+        if (letterNo < 97) {
           letterNo += 26;
         }
         
