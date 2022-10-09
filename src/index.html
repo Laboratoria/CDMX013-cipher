@@ -9,34 +9,27 @@
 </head>
 
 <body>
-
-    <header>
-        <h1>Protección de mensajes!</h1>
+    <header id="container-head">
+        <h1>Cifrado de mensajes</h1>
+        <!--<img src="escritorio 1.png" alt="Imágen escritorio">-->
     </header>
-
     <main class="First">
-        <article class="ParrafoI">
-            <img src="escritorio.jpeg" alt="Imágen escritorio">
-        </article>
-
         <article class="ParrafoD">
-            <input type="text" id="mess" class="messBox" placeholder="mensaje">
-            <br>
+            <textarea rows="10" cols="40" id="mess" class="messBox" placeholder="mensaje"></textarea>
             <input type="number" class="offsetBox" id="offset" min="1" max="1000" placeholder="offset">
-            <br><br><br>
             <p class="messBox" id="respMess"></p>
+            <div>
+                <button id="bC">Codificar</button>
+                <button id="bD">Decodificar</button>
+            </div>
         </article>
-        <button id="bC">Codificar</button>
-        <button id="bD">Decodificar</button>
     </main>
-
-    <nav>
-        <p><strong>Consideraciones: </strong>Cifra y descifra mayúsculas y minúsculas</strong> excepto ñ,Ñ</p>
-    </nav>
-
     <footer class="piePag">
-        <p>Protección de Mensajes, <strong>Codifica y/o Decodifica</strong> utiliza método Cipher<a href="https://ayudaleyprotecciondatos.es/2020/06/10/cifrado-cesar/" target="_parent">Clic más info</a>), el cuál consiste en el desplazamiento (offset) de cada letra un cierto número de posiciones (offset) en el alfabeto.</p>
-        <p>   Julio 2022, Lourdes Arellano</p>
+        <p>Protección de Mensajes, <strong>Codifica y/o Decodifica</strong> utiliza método Cipher<a
+                href="https://ayudaleyprotecciondatos.es/2020/06/10/cifrado-cesar/" target="_parent">Clic más info</a>),
+            el cuál consiste en el desplazamiento (offset) de cada letra un cierto número de posiciones (offset) en el
+            alfabeto.</p>
+        <p> Julio 2022, Lourdes Arellano</p>
     </footer>
 
     <script src="index.js" type="module"></script>
