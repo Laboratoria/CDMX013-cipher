@@ -1,22 +1,109 @@
-h1
 
-/*  Diseño header*/
-    {
-    background-color: #c6c589;
-    margin: 3px;
-    height: 98%;
-    padding: 15px;
-    font-size: larger;
-    font-style: italic;
-    text-align: center;
-    color: black;
+body {
+    
+    margin: 0px;
+    background-color: #ebe6ea;
+    
+    
+}
+header{
+    
+    /*background: url(escritorio1.png);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    /* background-size: contain; */
+    /* margin-left: 10PX; */
+    /* margin-top: 12px; */
+    display: flex;
+    /* background-size: 98%; */
     justify-content: center;
     align-items: center;
+    
+  }
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:cursive;
+    font-size: 30px;
+    color: #273a2d;
+ }
+ main {
+    height: 515px;
+ }   
+ article {
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+ }
+ div {
+    display: flex;
+    justify-content: space-around;
+ }
+ .messBox  {
+    margin-top: 15px;
+    background-color: #e4c5c4;
+    border-radius: 10px;
+    border: none;
+  }
+  .offsetBox
+   {
+    margin-top: 15px;
+    height: 35px;
+    width: 82px;
+    border-radius: 10px;
+    background-color: #c8ad8d;
+    border: none;
+}
+.offsetBox:hover{
+    background-color: #6f7357;
 }
 
-.First
+#respMess {
+    width: 315px;
+    height: 141px;
+   /* margin-right: 50px;*/
+}
+button  {
+    border-radius: 10px;
+    background-color: #273a2d;
+    box-shadow: 0 10px 13px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border: none;
+    color: white;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 13px;
+}
+button:hover {
+    background-color: #6f7357;
+}
+
+/*#bD {
+    border-radius: 10px;
+    background-color: #776163;
+    box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    color: white;
+    height: 30px;
+    /*width: 70px;*/
+ /*   cursor: pointer;
+    font-size: 12px;
+    margin: 3px;
+
+    display: inline-block;
+    
+}
+/*.offsetBox:hover {
+    background: #F0D8CC;
+    color: #8f5a40 !important;
+  }
+    
+/*.First
 /*Diseño página principal Main*/
-    {
+ /*   {
     background-color: #546a7b;
     margin: 3px;
     width: auto;
@@ -26,7 +113,7 @@ h1
 .ParrafoI
 
 /*Diseño área para imágen*/
-    {
+ /*   {
     width: 15%;
     display: inline-block;
     vertical-align: top;
@@ -38,18 +125,11 @@ h1
     align-content: center;
 }
 
-img
-/*imágen*/
-    {
-    width: 100%;
-    display: inline-block;
-    margin: 3px;
-    vertical-align: middle;
-}
+
 
 .ParrafoD
 /*ärea para mensajes, lado derecho de pantalla principal*/
-    {
+  /*  {
     display: inline-block;
     margin: 3px;
     margin-left: 100px;
@@ -57,7 +137,7 @@ img
 
 .messBox
 /*configuración de cajas de mensajes*/
-    {
+/*    {
     border-radius: 5px;
     border: 1px solid gray;
     background-color: #c6c589;
@@ -69,7 +149,7 @@ img
 
 .offsetBox
 /*configuración de caja de offset*/
-    {
+/*   {
     border-radius: 5px;
     border: 1px solid gray;
     background-color: #c6c589;
@@ -82,7 +162,7 @@ img
 #bC
 
 /*botón codificador*/
-    {
+  /*  {
     background-color: #c9ad47;
     box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: none;
@@ -97,7 +177,7 @@ img
 #bD
 
 /*botón decodificador*/
-    {
+ /*   {
     background-color: #393d3f;
     box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: none;
@@ -113,25 +193,25 @@ img
 nav
 
 /*barra de indicaciones/restricciones*/
-    {
+ /*   {
     background: #546a7b;
     padding: 10px;
     margin: 3px;
     justify-content: space-between;
-}
+}*/
 
-.piePag
+.piePag{
 
 /*configuración de pie de página*/
-    {
-    background-color: #c6c589;
-    height: 100%;
-    padding: 15px;
-    margin: 3px;
-    font-size: small;
-    font-style: italic;
-    text-align: center;
-    color: black;
-    justify-content: center;
-    align-items: center;
+
+background-color: #273a2d;
+/* height: 100%; */
+/* padding: 15px; */
+/* margin: 3px; */
+font-size: small;
+font-style: italic;
+text-align: center;
+color: #ebe6ea;
+justify-content: center;
+align-items: center;
 }
