@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
 
 
-  
-  </head>
-  <body>
-    <div id="root"> 
-    </div>
 
-      <header>
-        <h1 id="title1">Mensajería secreta para parejas</h1>
-      </header>
-      
-        <div>
-            <p id="introduction">Logra mantener contacto con tu persona favorita con mensajes que sólo ustedes puedan cifrar/descifrar con un número secreto
-            </p>
-            <h2>¿Qué deseas hacer?</h2>
-        </div>
-                  <!-- elemento lista dentro de un menu  -->
-          <menu>         
-              <button><a href="cipher.html">Cifrar</a></button>
-              <button><a href="Decipher.html">Descifrar</a></button>
-          </menu>
-    
-      <!-- <h1>Cifrando un texto</h1> -->
+</head>
 
-      <footer>
-        <p>Elaborado por Arely Gutiérrez, estudiante de Laboratoria</p>
-      </footer>    
+<body>
+  <div id="root">
+  </div>
 
-    
+  <header>
+    <h1 id="title1">Mensajería secreta para parejas</h1>
+  </header>
+
+  <main id="welcomeMain">
+    <section id="topSection">
+      <p id="introduction">Logra mantener contacto con tu persona favorita con mensajes que sólo ustedes puedan
+        cifrar/descifrar con un número secreto
+      </p>
+    </section>
+
+    <section id="centerSection">
+      <img id="cipherImage" src="./image/cesarCipher.png" alt="cesarCipher">
+      <h2 id="question">¿Qué deseas hacer?</h2>
+      <img id="guysImage" src="./image/message.png" alt="message">
+    </section>
+
+    <section id="bottomSection">
+      <!-- elemento lista dentro de un menu  -->
+      <menu id="cipherMenu">
+        <button id="cipherButton"><a href="cipher.html">Cifrar</a></button>
+        <button id="decipherButton"><a href="Decipher.html">Descifrar</a></button>
+      </menu>
+
+    </section>
+
+  </main>
+
+  <footer id="cipherFooter">
+    <p>Elaborado por Arely Gutiérrez, estudiante de Laboratoria</p>
+  </footer>
 
 
-    
-    <script src="index.js" type="module"></script>
 
-  </body>
+
+
+  <script src="index.js" type="module"></script>
+
+</body>
+
 </html>

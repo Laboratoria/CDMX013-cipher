@@ -1,89 +1,165 @@
-body{
-    background-image: url("image/fondoPostales.jpg"); /*url('https://previews.123rf.com/images/deepfuze/deepfuze1607/deepfuze160700041/60148747-servicio-postal-modelo-incons%C3%BAtil-del-vector-con-los-sobres-y-cartas-sobre-un-fondo-beige.jpg?fj=1');*/
-    align-items: center;  /** quita mi formato que le habia dado pero segun debia hacer: Alinea elementos flexibles a lo largo del eje transversal de la línea actual del contenedor flexible. */
-    height: 500px;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    background-image: url("image/fondoPostales.jpg");
+    /* height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0; */
+    /*url('https://previews.123rf.com/images/deepfuze/deepfuze1607/deepfuze160700041/60148747-servicio-postal-modelo-incons%C3%BAtil-del-vector-con-los-sobres-y-cartas-sobre-un-fondo-beige.jpg?fj=1');*/
+    /* align-items: center; */
+    /** quita mi formato que le habia dado pero segun debia hacer: Alinea elementos flexibles a lo largo del eje transversal de la línea actual del contenedor flexible. */
+}
+
 /*cabecera principal*/
-header{
-    
-    background-color: rgba(119, 136, 153, 0.651);  
-    border: dotted;  
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-h1{
-    text-align: center;
-    padding: 2%;
-    font-size: 60px;
-    text-shadow: 2px 2px rgb(250, 248, 248);
-}
-
-h2{
-    text-align: center;
-    font-size: 50px;
+#title1, #introduction2 {
+    font-family: 'Lexend Tera';
+    font-size: 6vh;
     font-weight: bolder;
-    margin:8%;
-    text-shadow: 2px 2px rgb(250, 248, 248);
-    background-color: rgba(119, 136, 153, 0.753);
-}
-/*titulo*/
-#introduction{
     text-align: center;
-    font-size: 40px;
-    font-weight: bolder;
-    margin: 5%;
-    text-shadow: 2px 2px 2px 2px rgba(250, 248, 248, 0.598);
-    background-color: rgb(226, 218, 218, 0.83);
-    
+    width: 100%;
+    margin-top: 1.5%;
+    padding: 2% 0;
+    background-color: #D9D9D9;
+
 }
 
-menu{
+/* main */
+/* #welcomeMain{
+    height: 65.5vh;
+} */
+
+#topSection {
+    justify-content: center;
+    align-items: center;
+}
+
+#introduction {
+    /* font-size: 5rem; */
+    text-align: center;
+    font-size: 5vh;
+    font-weight: bolder;
+    margin: 1.5% 15%;
+    background-color: rgb(226 218 218 / 91%);
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 /80%);
+}
+
+#centerSection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-items: center;
+    justify-content: space-between;
+
+}
+
+#question {
+    text-align: center;
+    font-size: 8vh;
+    font-weight: bolder;
+    align-self: center;
+    background-color: bisque;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 /80%);
+
+}
+
+#cipherImage {
+    height: 20vh;
+    width: auto;
+    align-items: flex-start;
+    padding-left: 3% ;
+    /* justify-content:center; */
+}
+
+#guysImage {
+    height: 30vh;
+    width: auto;
+    align-items: flex-end;
+}
+
+#bottomSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#cipherMenu {
     display: flexbox;
-    text-align: center; 
+    text-align: center;
+    justify-content: space-between;
 }
 
-button{
+button, #cipherButton, #decipherButton {
+    width: 25vw;
+    height: 8vh;
     font-size: xx-large;
     font-weight: bold;
     margin: 0 30px 0 30px;
     border-radius: 10px;
-    color:beige;
+    color: beige;
     background-color: #D09B11;
-    box-shadow: 5px 3px 3px #b8b7b7;
+    box-shadow: 0 3px 5px 3px #b8b7b7;
     cursor: pointer; /*manita al seleccionar el botón */
+    justify-content: space-between;
+    border: none;
+}
+button:hover{
+    scale: 1.2;
 }
 
-
+a {
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: .5em;
+}
 
 /*pie de página*/
-footer{
-    color:white;
-    font-size: 40px;
+footer {
+    display: flex;
+    color: white;
+    font-size: 5vh;
     font-family: cursive;
     text-align: center;
     text-shadow: 2px 2px brown;
     background-color: rgba(0, 0, 0, 0.658);
+    justify-content:center;
+    padding: 1.5% 0;
+    bottom: 0%;
+ 
 }
-/*es id de form en cipher html con la intencion de poner background degradado */
-#cipherhtml{
+
+#cipherhtml {
     background-color: rgba(128, 128, 128, 0.685);
     border: 1px salmon;
 }
 
-form{
+form {
     background-color: rgb(226, 218, 218, 0.83);
     text-align: center;
-    font-size:30px;
+    font-size: 30px;
     font-weight: bolder;
     margin: 10%;
     text-shadow: 1.5px 1.5px 1.5px 2px rgb(120, 115, 115);
     padding: 1px;
 }
-input{
+
+input {
     font-size: 30px;
-    
+
 
 }
 
-#message{
+#message {
     font-size: 30px;
 }
