@@ -25,7 +25,7 @@ if (getCipherText === null) {
             document.getElementById("decipherText").innerHTML = "Llena todos datos correctamente 📝 y presiona el botón cifrar de nuevo 📥";
         } else {                    //ejecuta los metodos en cipher.js  
             event.preventDefault(); // Previene recarga del navegador 
-            document.getElementById("decipherText").innerHTML = "Tu mensaje cifrado es: " + cipher.decode(Number(offset.value), string.value);
+            document.getElementById("decipherText").innerHTML = "Tu mensaje cifrado es: <br/><br/> " + cipher.decode(Number(offset.value), string.value);
         }
     });
 } else if (getCipherText2 === null) {         //estamos en CIFRAR

@@ -17,25 +17,39 @@
   <header>
     <h1 id="introduction2"> Decifrando un texto 🔑🔓📜</h1>
   </header>
+  <main>
+    <form id="decipherhtmlmain">
+      <label>Pon aquí tu mensaje a <strong>descifrar</strong> </label> 
+      <textarea name="MessageToCipher" id="message" rows="4" placeholder="Escribe aquí tu texto a descifrar"></textarea>
+      <br>
+      <div>
+        <label>Número secreto (llave) para descifrar: </label>
+        <input type="number" id="offsetID" name="offset" maxlength="2" placeholder="--">
+        <button type="submit" value="Submit" id="cipherFunction2" class="pointer">Descifrar</button>
+      </div>
+      <div id="result"><p id="decipherText"></p></div>
+      
+      <menu>
+        <button id="returnWelcome"><a href="index.html">Inicio</a></button>
+      </menu>
+    </form>
 
-  <!-- ingreso de datos --> <!-- ingreso de datos -->
-  <form id="decipherhtmlmain">
-
+  </main>
+ 
+  <!-- <form id="decipherhtmlmain">
     <label>Pon aquí tu mensaje a <strong>descifrar</strong> </label> <br>
     <textarea name="MessageToDecipher" id="message" rows="10" cols="50"
       placeholder="Escribe aquí tu texto a descifrar"></textarea> <br>
     <br>
     <label>Número secreto (llave) para descifrar: </label>
     <input type="number" id="offsetID" name="offset" maxlength="2">
-    <!-- <button type="submit" value="Submit" id="cipherFunction" onclick="cipherTEXT(click)">Cifrar</button> <br><br> -->
     <button type="submit" value="Submit" id="cipherFunction2" class="pointer">Descifrar</button>
 
     <p id="decipherText"></p>
     <menu>
       <button id="returnWelcome"><a href="index.html">Inicio</a></button>
     </menu>
-
-  </form>
+  </form> -->
 
 
 

@@ -96,6 +96,8 @@ header {
 }
 
 #cipherButton, #decipherButton {
+    min-width:min-content;
+    width:max-content;
     width: 25vw;
     height: 8vh;
     font-size: xx-large;
@@ -142,17 +144,18 @@ form {
     font-size: 4vh;
     width: 95%;
     min-height: 60vh;
+    max-height:max-content;
     justify-content: center;
     align-items: center;
     margin: 1%;
     text-shadow: 1.5px 1.5px 1.5px 2px rgb(120, 115, 115);
     flex-direction: column;
     box-shadow: 0 3px 13px 1px rgb(0 0 0 /80%);
-    /* padding: 1% 0 1% 0; */
+    padding: 1% 0 1% 0;
     
 }
 
-#cipherForm{
+#cipherForm, #decipherhtmlmain{
     display: flex;
     flex-wrap: wrap;
     width: 95%;
@@ -181,23 +184,30 @@ form {
     background-color: #1B1818;
 }
  #cipherFunction, #cipherFunction2 {
-    width: 10vw;
+    /* min-width:min-content; */
+    max-width: max-content;
+    width: 25vw;
     height: 6vh;
     font-size: xx-large;
     font-weight: bold;
     margin: 0 30px 0 30px;
+    padding: 0 1vw 0 1vw;
     border-radius: 10px;
     color: beige;
     background-color: #D09B11;
     box-shadow: 0 3px 5px 3px #b8b7b7;
     cursor: pointer; /*manita al seleccionar el botón */
-    justify-content: space-between;
     border: none;
+    
 }
-#cipherText{
-    font-weight: bold;
+#result{
+    width: 95%;
     justify-content: center;
     align-items: center;
+}
+#cipherText, #decipherText{
+    font-weight: bold;
+
     /* text-shadow: 2px goldenrod; */
 }
 
@@ -211,9 +221,8 @@ form {
     height: 6vh;
     font-size: xx-large;
     font-weight: bold;
-    margin-top: 1%;
-    margin-left: 100%;
-    width: 15vw;
-    
+    margin: 2% 0 2% 100%;
+    padding: 0 1vw 0 1vw;
+    width:max-content;
     
 }
