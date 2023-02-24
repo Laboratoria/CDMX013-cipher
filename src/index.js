@@ -40,7 +40,7 @@ if (getCipherText === null) {
             document.getElementById("cipherText").innerHTML = "Llena todos datos correctamente 📝 y presiona el botón cifrar de nuevo 📥";
         } else {
             event.preventDefault(); // Previene recarga del navegador
-            document.getElementById("cipherText").innerHTML = "Tu mensaje cifrado es: " + cipher.encode(Number(offset.value), string.value);
+            document.getElementById("cipherText").innerHTML = "Tu mensaje cifrado es: <br/><br/> " + cipher.encode(Number(offset.value), string.value);
         }
     });
 }
