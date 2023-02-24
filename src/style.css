@@ -5,24 +5,15 @@
 
 body {
     background-image: url("image/fondoPostales.jpg");
-    /* height: 100%;
-    width: auto;
-    margin: 0;
-    padding: 0; */
-    /*url('https://previews.123rf.com/images/deepfuze/deepfuze1607/deepfuze160700041/60148747-servicio-postal-modelo-incons%C3%BAtil-del-vector-con-los-sobres-y-cartas-sobre-un-fondo-beige.jpg?fj=1');*/
-    /* align-items: center; */
-    /** quita mi formato que le habia dado pero segun debia hacer: Alinea elementos flexibles a lo largo del eje transversal de la línea actual del contenedor flexible. */
 }
 
-/*cabecera principal*/
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-#title1, #introduction2 {
+#title1 {
     font-family: 'Lexend Tera';
     font-size: 6vh;
     font-weight: bolder;
@@ -31,13 +22,18 @@ header {
     margin-top: 1.5%;
     padding: 2% 0;
     background-color: #D9D9D9;
+}
+#introduction2 {
+    font-family: 'Lexend Tera';
+    font-size: 6vh;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    margin-top: 1.5%;
+    padding: 2% 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #656262;
 
 }
-
-/* main */
-/* #welcomeMain{
-    height: 65.5vh;
-} */
 
 #topSection {
     justify-content: center;
@@ -60,7 +56,6 @@ header {
     width: 95%;
     justify-items: center;
     justify-content: space-between;
-
 }
 
 #question {
@@ -100,7 +95,7 @@ header {
     justify-content: space-between;
 }
 
-button, #cipherButton, #decipherButton {
+#cipherButton, #decipherButton, #returnWelcome {
     width: 25vw;
     height: 8vh;
     font-size: xx-large;
@@ -121,10 +116,9 @@ button:hover{
 a {
     text-decoration: none;
     color: #ffffff;
-    letter-spacing: .5em;
+    letter-spacing: .3em;
 }
 
-/*pie de página*/
 footer {
     display: flex;
     color: white;
@@ -136,30 +130,72 @@ footer {
     justify-content:center;
     padding: 1.5% 0;
     bottom: 0%;
- 
 }
 
 #cipherhtml {
     background-color: rgba(128, 128, 128, 0.685);
     border: 1px salmon;
 }
-
+/* cipher design */
 form {
     background-color: rgb(226, 218, 218, 0.83);
-    text-align: center;
-    font-size: 30px;
-    font-weight: bolder;
-    margin: 10%;
+    font-size: 4vh;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5%;
     text-shadow: 1.5px 1.5px 1.5px 2px rgb(120, 115, 115);
-    padding: 1px;
+    flex-direction: column;
+    padding: 1% 0 1% 0;
 }
 
-input {
-    font-size: 30px;
-
-
+#cipherForm{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-items: center;
 }
-
 #message {
-    font-size: 30px;
+    font-size: 4vh;
+    font-weight: bold;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 2.5%; */
+    resize: vertical;
+    padding:0 2% 0 1%;
+}
+#offsetID{
+    width: 5%;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1%;
+}
+
+#message, #offsetID{
+    color:  #FFFFFF;
+    background-color: #1B1818;
+}
+ #cipherFunction, #cipherFunction2 {
+    width: 10vw;
+    height: 8vh;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0 30px 0 30px;
+    border-radius: 10px;
+    color: beige;
+    background-color: #D09B11;
+    box-shadow: 0 3px 5px 3px #b8b7b7;
+    cursor: pointer; /*manita al seleccionar el botón */
+    justify-content: space-between;
+    border: none;
+}
+#cipherText{
+    font-weight: bold;
+    /* text-shadow: 2px goldenrod; */
+}
+
+#returnWelcome{
+    margin-left: 90%;
 }

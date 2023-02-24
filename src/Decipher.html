@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
 
 
-  
-  </head>
-  <body>
-    <div id="root"> 
-    </div>
 
-      <header>
-        <h1 id="introduction2"> Decifrando un texto 🔑🔓📜</h1>
-      </header>
-    
-            <!-- ingreso de datos --> <!-- ingreso de datos -->
-            <form id="decipherhtmlmain">
-            
-              <label>Pon aquí tu mensaje a <strong>descifrar</strong> </label> <br>
-              <textarea name="MessageToDecipher" id="message" rows="10" cols="50" placeholder="Escribe aquí tu texto a descifrar"></textarea> <br>
-              <br>
-              <label>Número secreto (llave) para descifrar: </label> 
-              <input type="number" id="offsetID" name="offset" maxlength="2">
-             <!-- <button type="submit" value="Submit" id="cipherFunction" onclick="cipherTEXT(click)">Cifrar</button> <br><br> -->
-                  <button type="submit" value="Submit" id="cipherFunction2" class="pointer">Descifrar</button>
-    
-          <p id="decipherText"></p>
-          
+</head>
 
-        </form>
- 
+<body>
+  <div id="root">
+  </div>
 
-     <menu>         
-        <button><a href="index.html">Inicio</a></button>
-     </menu>
+  <header>
+    <h1 id="introduction2"> Decifrando un texto 🔑🔓📜</h1>
+  </header>
 
-      <footer>
-        <p>Elaborado por Arely Gutiérrez, estudiante de Laboratoria</p>
-      </footer>
+  <!-- ingreso de datos --> <!-- ingreso de datos -->
+  <form id="decipherhtmlmain">
+
+    <label>Pon aquí tu mensaje a <strong>descifrar</strong> </label> <br>
+    <textarea name="MessageToDecipher" id="message" rows="10" cols="50"
+      placeholder="Escribe aquí tu texto a descifrar"></textarea> <br>
+    <br>
+    <label>Número secreto (llave) para descifrar: </label>
+    <input type="number" id="offsetID" name="offset" maxlength="2">
+    <!-- <button type="submit" value="Submit" id="cipherFunction" onclick="cipherTEXT(click)">Cifrar</button> <br><br> -->
+    <button type="submit" value="Submit" id="cipherFunction2" class="pointer">Descifrar</button>
+
+    <p id="decipherText"></p>
 
 
-    
-    <script src="index.js" type="module"></script>
+  </form>
 
-  </body>
+
+  <menu>
+    <button id="returnWelcome"><a href="index.html">Inicio</a></button>
+  </menu>
+
+  <footer id="cipherFooter">
+    <p>Elaborado por Arely Gutiérrez, estudiante de Laboratoria</p>
+  </footer>
+
+
+
+  <script src="index.js" type="module"></script>
+
+</body>
+
 </html>
